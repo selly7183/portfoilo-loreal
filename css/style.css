@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -80,6 +81,50 @@ video {
   height: calc(100vh - 486px);
   object-fit: cover;
   filter: grayscale(1);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: end;
+}
+footer .footer__signature {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  flex: 1;
+  padding-top: 330px;
+}
+footer .footer__signature p {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+footer .footer__signature h3 {
+  margin-top: 20px;
+  font-weight: var(--weight-regular);
+  font-size: 25px;
+}
+footer .footer__logo {
+  width: 100%;
+}
+footer aside {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-row-gap: 0px;
+  width: 100%;
+  font-size: var(--font-small);
+  margin: 10px 0;
+}
+footer aside .footer__copy {
+  display: flex;
+  justify-content: center;
+}
+footer aside ul {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
 }
 
 /*# sourceMappingURL=style.css.map */
