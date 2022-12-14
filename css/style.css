@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 :root {
   /* Color */
-  --color-white: #ffffff;
-  --color-black: #00000;
+  --color-white: #fff;
+  --color-black: #000;
   /* Font size */
   --font-small: 13px;
   --font-medium: 20px;
@@ -39,30 +39,23 @@ a {
   color: var(--color-black);
 }
 
-#wrapper .inner {
+.inner {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 #wrapper header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px 80px;
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 1.5px solid var(--color-black);
   position: relative;
   margin-bottom: 60px;
 }
-#wrapper header::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -70px;
-  width: calc(100% + 140px);
-  height: 1px;
-  background: #000;
+#wrapper header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #wrapper header a img {
   width: 100px;
@@ -76,40 +69,89 @@ a {
   font-size: var(--font-small);
 }
 
-video {
+.section01 video {
   width: 100%;
   height: calc(100vh - 486px);
   object-fit: cover;
   filter: grayscale(1);
 }
 
+.section02 .image__cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  padding: 0 80px;
+}
+.section02 .image__cont .image__cont_box {
+  width: 60%;
+  padding-top: 30%;
+  filter: grayscale(1);
+}
+.section02 .image__cont .image__cont_box.n02 {
+  padding-top: 100%;
+  width: 100%;
+}
+.section02 .image__cont .image__cont_box.n02 img {
+  width: 100%;
+}
+.section02 .image__cont .image__cont_box.n03 {
+  margin-top: -20%;
+}
+.section02 .image__cont .image__cont_box.n04 {
+  padding-top: 100%;
+  width: 100%;
+}
+.section02 .image__cont .image__cont_box.n04 img {
+  width: 100%;
+}
+
+.section03 {
+  margin-top: 100px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 80px 0;
+}
+.section03 h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 80px;
+  font-weight: var(--weight-regular);
+  display: inline-block;
+  line-height: 1;
+}
+.section03 p {
+  margin-top: 30px;
+}
+
 footer {
+  height: 100vh;
+}
+footer .inner {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   align-items: end;
+  height: 100%;
 }
-footer .footer__signature {
+footer .inner .footer__signature {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
   flex: 1;
   padding-top: 330px;
 }
-footer .footer__signature p {
+footer .inner .footer__signature p {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
 }
-footer .footer__signature h3 {
+footer .inner .footer__signature h3 {
   margin-top: 20px;
   font-weight: var(--weight-regular);
   font-size: 25px;
 }
-footer .footer__logo {
+footer .inner .footer__logo {
   width: 100%;
 }
-footer aside {
+footer .inner aside {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
   grid-row-gap: 0px;
@@ -117,11 +159,11 @@ footer aside {
   font-size: var(--font-small);
   margin: 10px 0;
 }
-footer aside .footer__copy {
+footer .inner aside .footer__copy {
   display: flex;
   justify-content: center;
 }
-footer aside ul {
+footer .inner aside ul {
   display: flex;
   gap: 20px;
   justify-content: end;
