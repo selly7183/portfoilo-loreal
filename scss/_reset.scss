@@ -1,0 +1,42 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+
+:root {
+	/* Color */
+	--color-white: #ffffff;
+	--color-black: #00000;
+
+	/* Font size */
+	--font-small: 13px;
+	--font-medium: 20px;
+	--font-large: 36px;
+	--font-x-large: 42px;
+
+	/* Font weight */
+	--weight-bold: 700;
+	--weight-semi-bold: 600;
+	--weight-regular: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Noto Sans", sans-serif;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	overflow-x: hidden;
+	// font-family: "Crimson Text", serif;
+}
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-black);
+}
