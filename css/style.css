@@ -27,6 +27,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   background-color: var(--color-white);
   color: var(--color-black);
+  background-color: var(--color-white);
   overflow-x: hidden;
 }
 
@@ -57,6 +58,8 @@ a {
 .links .link {
   text-align: center;
   position: relative;
+  font-size: var(--font-small);
+  cursor: pointer;
 }
 .links .link:hover .link__cont span:nth-of-type(1) {
   transform: translateY(250%) rotateX(65deg);
@@ -91,8 +94,16 @@ a {
 #wrapper header {
   padding: 15px 80px;
   border-bottom: 1.5px solid var(--color-black);
-  position: relative;
-  margin-bottom: 60px;
+  background-color: var(--color-white);
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+#wrapper header.active {
+  padding: 10px 50px;
 }
 #wrapper header .inner {
   display: flex;
@@ -116,6 +127,9 @@ a {
   font-weight: var(--weight-bold);
 }
 
+.section01 {
+  margin-top: 120px;
+}
 .section01 video {
   width: 100%;
   height: calc(100vh - 486px);
@@ -248,6 +262,7 @@ a {
   padding: 100px;
   background-color: var(--color-white);
   margin-bottom: 400px;
+  pointer-events: none;
 }
 .section04 .inner {
   display: flex;
@@ -273,6 +288,9 @@ a {
 .section04 h3 {
   text-align: center;
   margin-top: 100px;
+  font-size: var(--font-x-large);
+  font-weight: var(--weight-regular);
+  letter-spacing: 5px;
 }
 
 footer {
@@ -330,6 +348,12 @@ footer .inner aside ul {
   display: flex;
   gap: 20px;
   justify-content: end;
+}
+footer .inner aside ul li a {
+  transition: all 0.3s ease-in-out;
+}
+footer .inner aside ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

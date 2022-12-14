@@ -16,6 +16,8 @@
 	.link {
 		text-align: center;
 		position: relative;
+		font-size: var(--font-small);
+		cursor: pointer;
 		&:hover {
 			.link__cont {
 				span:nth-of-type(1) {
@@ -57,8 +59,16 @@
 	header {
 		padding: 15px 80px;
 		border-bottom: 1.5px solid var(--color-black);
-		position: relative;
-		margin-bottom: 60px;
+		background-color: var(--color-white);
+		transition: all 300ms ease-in-out;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		&.active {
+			padding: 10px 50px;
+		}
 		.inner {
 			display: flex;
 			justify-content: space-between;
@@ -91,6 +101,7 @@
 
 // section01
 .section01 {
+	margin-top: 120px;
 	video {
 		width: 100%;
 		height: calc(100vh - 486px);
@@ -228,10 +239,13 @@
 }
 
 // section04
+
 .section04 {
 	padding: 100px;
 	background-color: var(--color-white);
 	margin-bottom: 400px;
+	pointer-events: none;
+
 	.inner {
 		display: flex;
 		justify-content: center;
@@ -256,6 +270,9 @@
 	h3 {
 		text-align: center;
 		margin-top: 100px;
+		font-size: var(--font-x-large);
+		font-weight: var(--weight-regular);
+		letter-spacing: 5px;
 	}
 }
 
@@ -314,6 +331,14 @@ footer {
 				display: flex;
 				gap: 20px;
 				justify-content: end;
+				li {
+					a {
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							color: rgba(0, 0, 0, 0.5);
+						}
+					}
+				}
 			}
 		}
 	}
