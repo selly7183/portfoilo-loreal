@@ -100,6 +100,20 @@
 	}
 }
 
+// section04
+.section04 {
+	.inner {
+		display: flex;
+		justify-content: center;
+		.img__box {
+			width: 30%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
 // footer
 footer {
 	height: 100vh;
