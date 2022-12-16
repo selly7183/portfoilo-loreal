@@ -6,9 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Loreal</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/locomotive-scroll.css" />
 		<script defer src="js/main.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/locomotive-scroll.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/zepto.min.js"></script>
 	</head>
-	<body>
+	<body data-scroll-container>
 		<div class="preloader"></div>
 		<div id="wrapper">
 			<!-- header -->
@@ -61,264 +67,350 @@
 					</nav>
 				</div>
 			</header>
-
-			<!-- main -->
-			<main>
-				<section class="section01">
-					<div class="inner">
-						<video
-							src="src/video/main-video.mp4"
-							autoplay
-							loop
-							alt="main-video"
-						/>
-					</div>
-				</section>
-				<section class="section02">
-					<div class="inner">
-						<div class="image__cont">
-							<div class="image__cont_box n01">
-								<img src="src/img/section02-1.jpg" alt="loreal-image" />
-							</div>
-							<div class="image__cont_box n02">
-								<img src="src/img/section02-2.jpg" alt="loreal-image" />
-							</div>
-							<div class="image__cont_box n03">
-								<img src="src/img/section02-4.jpg" alt="loreal-image" />
-							</div>
-							<div class="image__cont_box n04">
-								<img src="src/img/LOREAL0279240.jpg" alt="loreal-image" />
-							</div>
+			<div>
+				<!-- main -->
+				<main>
+					<section class="section01" data-scroll-section>
+						<div class="inner">
+							<video
+								src="src/video/main-video.mp4"
+								autoplay
+								loop
+								alt="main-video"
+							/>
 						</div>
-					</div>
-				</section>
-				<section class="section03">
-					<div class="inner">
-						<h2>Commitments & <br />Responsibilities</h2>
-						<p>Doing everything in our power to be exemplary</p>
-						<div class="commitments__tab">
-							<ul class="links">
-								<li class="on link">
-									<span class="link__cont">
-										<span class="link__text">FOR OUR PLANET</span>
-										<span class="link__text">FOR OUR PLANET</span>
-									</span>
-								</li>
-								<li class="link">
-									<span class="link__cont">
-										<span class="link__text">FOR OUR PEOPLE</span>
-										<span class="link__text">FOR OUR PEOPLE</span>
-									</span>
-								</li>
-								<li class="link">
-									<span class="link__cont">
-										<span class="link__text">FOR OUR PRODUCT</span>
-										<span class="link__text">FOR OUR PRODUCT</span>
-									</span>
-								</li>
-							</ul>
-						</div>
-
-						<div class="commitments__cont on">
-							<div class="commitments__cont_box">
-								<h3 class="commitments__box_left">FOR OUR PLANET</h3>
-								<div class="commitments__box_right">
-									<h3>
-										L’Oréal for the Future, our sustainability commitments for
-										2030
-									</h3>
-									<table>
-										<tbody>
-											<tr>
-												<th>Fighting Climate Change</th>
-												<td scope="row">
-													For more than 20 years, we have worked to reduce the
-													CO2 emissions linked to our industrial activity. To
-													achieve this, we improved energy efficiency across all
-													our facilities (buildings, equipment, etc.), increased
-													the use of local renewable energy wherever possible
-													and achieved the targets defined for the sites without
-													carbon offsetting projects.
-												</td>
-											</tr>
-											<tr>
-												<th>Managing Water Sustainably</th>
-												<td scope="row">
-													At L’Oréal, water, as an essential component in
-													creating and using our products, is central to our
-													business. Our ability to operate effectively and meet
-													all the needs of our consumers depends on sustainable
-													water access, management and conservation.
-												</td>
-											</tr>
-											<tr>
-												<th>Respecting Biodiversity</th>
-												<td scope="row">
-													Preserving the beauty of the planet also means
-													preserving its biodiversity. Natural ecosystems have
-													been damaged, with major consequences for lands and
-													communities across the world, including in terms of
-													their resilience to climate change. We are committed
-													to protecting and preserving biodiversity, a unique
-													bounty..
-												</td>
-											</tr>
-											<tr>
-												<th>Preserving Natural Resources</th>
-												<td scope="row">
-													At L’Oréal, we manage our consumption of natural
-													resources to ensure that our activities are compatible
-													with a resource-constrained planet. We promote the use
-													of renewable raw materials that are sustainably
-													sourced or derived from green chemistry. We are also
-													working on solutions that allow for more recycling and
-													promote the development of the circular economy.
-												</td>
-											</tr>
-										</tbody>
-									</table>
+					</section>
+					<section class="section02" data-scroll-section>
+						<div class="inner">
+							<div class="image__cont">
+								<div
+									class="image__cont_box n01"
+									data-scroll
+									data-scroll-speed="1"
+								>
+									<img
+										src="src/img/section02-1.jpg"
+										alt="loreal-image"
+										data-scroll
+										data-scroll-speed="-1"
+									/>
+								</div>
+								<div
+									class="image__cont_box n02"
+									data-scroll
+									data-scroll-speed="2"
+								>
+									<img
+										src="src/img/section02-2.jpg"
+										alt="loreal-image"
+										data-scroll
+										data-scroll-speed="-1"
+									/>
+								</div>
+								<div
+									class="image__cont_box n03"
+									data-scroll
+									data-scroll-speed="3"
+								>
+									<img
+										src="src/img/section02-4.jpg"
+										alt="loreal-image"
+										data-scroll
+										data-scroll-speed="-1"
+									/>
+								</div>
+								<div
+									class="image__cont_box n04"
+									data-scroll
+									data-scroll-speed="4"
+								>
+									<img
+										src="src/img/LOREAL0279240.jpg"
+										alt="loreal-image"
+										data-scroll
+										data-scroll-speed="-1"
+									/>
 								</div>
 							</div>
 						</div>
-						<div class="commitments__cont">
-							<div class="commitments__cont_box">
-								<h3 class="commitments__box_left">FOR OUR PEOPLE</h3>
-								<div class="commitments__box_right">
-									<h3>
-										L’Oréal for the Future, our sustainability commitments for
-										2030
-									</h3>
-									<table>
-										<tbody>
-											<tr>
-												<th>Fighting Climate Change</th>
-												<td scope="row">
-													For more than 20 years, we have worked to reduce the
-													CO2 emissions linked to our industrial activity. To
-													achieve this, we improved energy efficiency across all
-													our facilities (buildings, equipment, etc.), increased
-													the use of local renewable energy wherever possible
-													and achieved the targets defined for the sites without
-													carbon offsetting projects.
-												</td>
-											</tr>
-											<tr>
-												<th>Managing Water Sustainably</th>
-												<td scope="row">
-													At L’Oréal, water, as an essential component in
-													creating and using our products, is central to our
-													business. Our ability to operate effectively and meet
-													all the needs of our consumers depends on sustainable
-													water access, management and conservation.
-												</td>
-											</tr>
-											<tr>
-												<th>Respecting Biodiversity</th>
-												<td scope="row">
-													Preserving the beauty of the planet also means
-													preserving its biodiversity. Natural ecosystems have
-													been damaged, with major consequences for lands and
-													communities across the world, including in terms of
-													their resilience to climate change. We are committed
-													to protecting and preserving biodiversity, a unique
-													bounty..
-												</td>
-											</tr>
-											<tr>
-												<th>Preserving Natural Resources</th>
-												<td scope="row">
-													At L’Oréal, we manage our consumption of natural
-													resources to ensure that our activities are compatible
-													with a resource-constrained planet. We promote the use
-													of renewable raw materials that are sustainably
-													sourced or derived from green chemistry. We are also
-													working on solutions that allow for more recycling and
-													promote the development of the circular economy.
-												</td>
-											</tr>
-										</tbody>
-									</table>
+					</section>
+					<section class="section03" data-scroll-section>
+						<div class="inner">
+							<h2 data-scroll data-words data-scroll-offset="150">
+								<span
+									class="word"
+									style="--word-index: 1"
+									data-word="Commitments &"
+									>Commitments &
+								</span>
+								<span
+									class="word"
+									style="--word-index: 2"
+									data-word="Responsibilities"
+									>Responsibilities</span
+								>
+							</h2>
+							<p>Doing everything in our power to be exemplary</p>
+							<div class="commitments__tab" data-scroll data-scroll-offset="50">
+								<ul class="links">
+									<li class="on link">
+										<span class="link__cont">
+											<span class="link__text">FOR OUR PLANET</span>
+											<span class="link__text">FOR OUR PLANET</span>
+										</span>
+									</li>
+									<li class="link">
+										<span class="link__cont">
+											<span class="link__text">FOR OUR PEOPLE</span>
+											<span class="link__text">FOR OUR PEOPLE</span>
+										</span>
+									</li>
+									<li class="link">
+										<span class="link__cont">
+											<span class="link__text">FOR OUR PRODUCT</span>
+											<span class="link__text">FOR OUR PRODUCT</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div id="sticky">
+								<div class="commitments__cont on">
+									<div class="commitments__cont_box">
+										<h3
+											class="commitments__box_left"
+											data-scroll
+											data-scroll-sticky
+											data-scroll-target="#sticky"
+										>
+											FOR OUR PLANET
+										</h3>
+										<div class="commitments__box_right">
+											<h3>
+												L’Oréal for the Future, our sustainability commitments
+												for 2030
+											</h3>
+											<table>
+												<tbody>
+													<tr>
+														<th>Fighting Climate Change</th>
+														<td scope="row">
+															For more than 20 years, we have worked to reduce
+															the CO2 emissions linked to our industrial
+															activity. To achieve this, we improved energy
+															efficiency across all our facilities (buildings,
+															equipment, etc.), increased the use of local
+															renewable energy wherever possible and achieved
+															the targets defined for the sites without carbon
+															offsetting projects.
+														</td>
+													</tr>
+													<tr>
+														<th>Managing Water Sustainably</th>
+														<td scope="row">
+															At L’Oréal, water, as an essential component in
+															creating and using our products, is central to our
+															business. Our ability to operate effectively and
+															meet all the needs of our consumers depends on
+															sustainable water access, management and
+															conservation.
+														</td>
+													</tr>
+													<tr>
+														<th>Respecting Biodiversity</th>
+														<td scope="row">
+															Preserving the beauty of the planet also means
+															preserving its biodiversity. Natural ecosystems
+															have been damaged, with major consequences for
+															lands and communities across the world, including
+															in terms of their resilience to climate change. We
+															are committed to protecting and preserving
+															biodiversity, a unique bounty..
+														</td>
+													</tr>
+													<tr>
+														<th>Preserving Natural Resources</th>
+														<td scope="row">
+															At L’Oréal, we manage our consumption of natural
+															resources to ensure that our activities are
+															compatible with a resource-constrained planet. We
+															promote the use of renewable raw materials that
+															are sustainably sourced or derived from green
+															chemistry. We are also working on solutions that
+															allow for more recycling and promote the
+															development of the circular economy.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="commitments__cont" data-scroll-target>
+									<div class="commitments__cont_box">
+										<h3 class="commitments__box_left">FOR OUR PEOPLE</h3>
+										<div class="commitments__box_right">
+											<h3>
+												L’Oréal for the Future, our sustainability commitments
+												for 2030
+											</h3>
+											<table>
+												<tbody>
+													<tr>
+														<th>Fighting Climate Change</th>
+														<td scope="row">
+															For more than 20 years, we have worked to reduce
+															the CO2 emissions linked to our industrial
+															activity. To achieve this, we improved energy
+															efficiency across all our facilities (buildings,
+															equipment, etc.), increased the use of local
+															renewable energy wherever possible and achieved
+															the targets defined for the sites without carbon
+															offsetting projects.
+														</td>
+													</tr>
+													<tr>
+														<th>Managing Water Sustainably</th>
+														<td scope="row">
+															At L’Oréal, water, as an essential component in
+															creating and using our products, is central to our
+															business. Our ability to operate effectively and
+															meet all the needs of our consumers depends on
+															sustainable water access, management and
+															conservation.
+														</td>
+													</tr>
+													<tr>
+														<th>Respecting Biodiversity</th>
+														<td scope="row">
+															Preserving the beauty of the planet also means
+															preserving its biodiversity. Natural ecosystems
+															have been damaged, with major consequences for
+															lands and communities across the world, including
+															in terms of their resilience to climate change. We
+															are committed to protecting and preserving
+															biodiversity, a unique bounty..
+														</td>
+													</tr>
+													<tr>
+														<th>Preserving Natural Resources</th>
+														<td scope="row">
+															At L’Oréal, we manage our consumption of natural
+															resources to ensure that our activities are
+															compatible with a resource-constrained planet. We
+															promote the use of renewable raw materials that
+															are sustainably sourced or derived from green
+															chemistry. We are also working on solutions that
+															allow for more recycling and promote the
+															development of the circular economy.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="commitments__cont" data-scroll-target>
+									<div class="commitments__cont_box">
+										<h3 class="commitments__box_left">FOR OUR PRODUCT</h3>
+										<div class="commitments__box_right">
+											<h3>
+												L’Oréal for the Future, our sustainability commitments
+												for 2030
+											</h3>
+											<table>
+												<tbody>
+													<tr>
+														<th>Fighting Climate Change</th>
+														<td scope="row">
+															For more than 20 years, we have worked to reduce
+															the CO2 emissions linked to our industrial
+															activity. To achieve this, we improved energy
+															efficiency across all our facilities (buildings,
+															equipment, etc.), increased the use of local
+															renewable energy wherever possible and achieved
+															the targets defined for the sites without carbon
+															offsetting projects.
+														</td>
+													</tr>
+													<tr>
+														<th>Managing Water Sustainably</th>
+														<td scope="row">
+															At L’Oréal, water, as an essential component in
+															creating and using our products, is central to our
+															business. Our ability to operate effectively and
+															meet all the needs of our consumers depends on
+															sustainable water access, management and
+															conservation.
+														</td>
+													</tr>
+													<tr>
+														<th>Respecting Biodiversity</th>
+														<td scope="row">
+															Preserving the beauty of the planet also means
+															preserving its biodiversity. Natural ecosystems
+															have been damaged, with major consequences for
+															lands and communities across the world, including
+															in terms of their resilience to climate change. We
+															are committed to protecting and preserving
+															biodiversity, a unique bounty..
+														</td>
+													</tr>
+													<tr>
+														<th>Preserving Natural Resources</th>
+														<td scope="row">
+															At L’Oréal, we manage our consumption of natural
+															resources to ensure that our activities are
+															compatible with a resource-constrained planet. We
+															promote the use of renewable raw materials that
+															are sustainably sourced or derived from green
+															chemistry. We are also working on solutions that
+															allow for more recycling and promote the
+															development of the circular economy.
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="commitments__cont">
-							<div class="commitments__cont_box">
-								<h3 class="commitments__box_left">FOR OUR PRODUCT</h3>
-								<div class="commitments__box_right">
-									<h3>
-										L’Oréal for the Future, our sustainability commitments for
-										2030
-									</h3>
-									<table>
-										<tbody>
-											<tr>
-												<th>Fighting Climate Change</th>
-												<td scope="row">
-													For more than 20 years, we have worked to reduce the
-													CO2 emissions linked to our industrial activity. To
-													achieve this, we improved energy efficiency across all
-													our facilities (buildings, equipment, etc.), increased
-													the use of local renewable energy wherever possible
-													and achieved the targets defined for the sites without
-													carbon offsetting projects.
-												</td>
-											</tr>
-											<tr>
-												<th>Managing Water Sustainably</th>
-												<td scope="row">
-													At L’Oréal, water, as an essential component in
-													creating and using our products, is central to our
-													business. Our ability to operate effectively and meet
-													all the needs of our consumers depends on sustainable
-													water access, management and conservation.
-												</td>
-											</tr>
-											<tr>
-												<th>Respecting Biodiversity</th>
-												<td scope="row">
-													Preserving the beauty of the planet also means
-													preserving its biodiversity. Natural ecosystems have
-													been damaged, with major consequences for lands and
-													communities across the world, including in terms of
-													their resilience to climate change. We are committed
-													to protecting and preserving biodiversity, a unique
-													bounty..
-												</td>
-											</tr>
-											<tr>
-												<th>Preserving Natural Resources</th>
-												<td scope="row">
-													At L’Oréal, we manage our consumption of natural
-													resources to ensure that our activities are compatible
-													with a resource-constrained planet. We promote the use
-													of renewable raw materials that are sustainably
-													sourced or derived from green chemistry. We are also
-													working on solutions that allow for more recycling and
-													promote the development of the circular economy.
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+					</section>
+					<section class="section04" data-scroll-section>
+						<div id="cursor"></div>
+						<div class="inner">
+							<h2 data-scroll data-words data-scroll-offset="100">
+								<span class="word" style="--word-index: 1" data-word="Create"
+									>Create
+								</span>
+								<span class="word" style="--word-index: 2" data-word="the"
+									>the
+								</span>
+								<span class="word" style="--word-index: 3" data-word="beauty"
+									>beauty
+								</span>
+								<br />
+								<span class="word" style="--word-index: 4" data-word="that"
+									>that
+								</span>
+								<span class="word" style="--word-index: 5" data-word="moves"
+									>moves
+								</span>
+								<span class="word" style="--word-index: 6" data-word="the"
+									>the
+								</span>
+								<span class="word" style="--word-index: 7" data-word="world."
+									>world.
+								</span>
+							</h2>
+							<div class="img__box" data-speed-x="200" data-speed-y="200">
+								<img src="src/img/section04.jpg" alt="loreal" />
 							</div>
 						</div>
-					</div>
-				</section>
-				<section class="section04">
-					<div id="cursor"></div>
-					<div class="inner">
-						<h2>
-							Create the beauty<br />
-							that moves the world.
-						</h2>
-						<div class="img__box">
-							<img src="src/img/section04.jpg" alt="loreal" />
-						</div>
-					</div>
-					<h3>A unique Beauty leader</h3>
-				</section>
-			</main>
-
+						<h3>A unique Beauty leader</h3>
+					</section>
+				</main>
+			</div>
 			<!-- footer -->
 			<footer>
 				<div class="inner">
