@@ -120,6 +120,12 @@ h2.is-inview .word {
   transform: translateY(0);
 }
 
+h3.is-inview .word {
+  opacity: 1;
+  transform: translateY(0);
+  display: inline;
+}
+
 #wrapper header {
   padding: 15px 80px;
   border-bottom: 1.5px solid var(--color-black);
@@ -354,7 +360,7 @@ h2.is-inview .word {
 
 .section04 {
   padding: 100px;
-  margin-bottom: 400px;
+  margin-bottom: 350px;
   background-color: var(--color-white);
   pointer-events: none;
 }

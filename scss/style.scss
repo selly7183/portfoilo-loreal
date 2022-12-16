@@ -2,8 +2,7 @@
 @import "reset";
 
 /* 공통 */
-#cursor {
-}
+
 .preloader {
 	position: fixed;
 	top: 0px;
@@ -81,6 +80,13 @@ h2.is-inview {
 	.word {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+h3.is-inview {
+	.word {
+		opacity: 1;
+		transform: translateY(0);
+		display: inline;
 	}
 }
 
@@ -339,7 +345,7 @@ h2.is-inview {
 // section04
 .section04 {
 	padding: 100px;
-	margin-bottom: 400px;
+	margin-bottom: 350px;
 	background-color: var(--color-white);
 	pointer-events: none;
 
