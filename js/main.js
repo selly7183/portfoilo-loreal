@@ -1,5 +1,11 @@
 "use strict";
 
+// preload
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", (e) => {
+	preloader.classList.add("preloader--hide");
+});
+
 // header - fixed
 const header = document.querySelector("header");
 const headerRect = header.getBoundingClientRect().height;
@@ -31,3 +37,14 @@ const section03 = document.querySelector(".section03");
 commitments.addEventListener("click", (e) => {
 	section03.scrollIntoView({ behavior: "smooth", block: "start" });
 });
+
+// section04 - mouse cursor
+// const section04 = document.querySelector(".section04");
+
+// document.addEventListener("mousemove", (e) => {
+// 	const x = e.clientX;
+// 	const y = e.clientY;
+// 	const cursor = document.querySelector("#cursor");
+// 	section04.style.cursor = "none";
+// 	cursor.style.transform = `translate(${x}px, ${y}px )`;
+// });

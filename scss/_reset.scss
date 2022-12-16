@@ -31,7 +31,9 @@ body {
 	color: var(--color-black);
 	background-color: var(--color-white);
 	overflow-x: hidden;
+	position: relative;
 }
+
 ul,
 li {
 	list-style: none;

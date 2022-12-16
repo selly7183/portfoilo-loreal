@@ -2,6 +2,22 @@
 @import "reset";
 
 /* 공통 */
+.preloader {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100%;
+	z-index: 11111;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease 1.5s;
+	background-color: var(--color-black);
+	&.preloader--hide {
+		height: 0;
+		pointer-events: none;
+	}
+}
+
 .inner {
 	max-width: 1600px;
 	width: 100%;
@@ -275,6 +291,17 @@
 		letter-spacing: 5px;
 	}
 }
+// #cursor {
+// 	position: absolute;
+// 	transform: translate(-50%, -50%);
+// 	width: 20px;
+// 	height: 20px;
+// 	background: red;
+// 	border-radius: 50%;
+// 	pointer-events: none;
+// 	z-index: 5;
+// 	//transition: transform 0.15s ease-in-out;
+// }
 
 // footer
 footer {
