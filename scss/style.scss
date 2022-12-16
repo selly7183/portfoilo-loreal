@@ -177,7 +177,23 @@
 		}
 		.commitments__tab {
 			padding: 120px 0 15px 0;
-			border-bottom: 1px solid var(--color-white);
+			position: relative;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				transform: scaleX(0);
+				background-color: var(--color-white);
+				transform-origin: left;
+				transition: transform 0.75s cubic-bezier(0.38, 0.005, 0.215, 1);
+			}
+			&.on::after {
+				transform: scaleX(1);
+			}
 			ul {
 				display: flex;
 				gap: 80px;

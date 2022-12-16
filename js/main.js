@@ -38,6 +38,18 @@ commitments.addEventListener("click", (e) => {
 	section03.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
+//section03 - line
+const section03Rect = section03.getBoundingClientRect().height;
+console.log(section03Rect);
+const tab = document.querySelector(".commitments__tab");
+document.addEventListener("scroll", (e) => {
+	if (window.scrollY > section03Rect * 2.5) {
+		tab.classList.add("on");
+	} else {
+		tab.classList.remove("on");
+	}
+});
+
 // section04 - mouse cursor
 // const section04 = document.querySelector(".section04");
 
