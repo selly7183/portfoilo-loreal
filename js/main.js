@@ -57,29 +57,17 @@ commitments.addEventListener("click", (e) => {
 });
 
 //section04 - mouse cursor
-(function () {
-	var parallaxContainer = document.querySelector(".section04");
-
-	var parallaxItems = document.querySelector(".img__box");
-
-	var fixer = 0.003;
-
-	document.addEventListener("mousemove", function (event) {
-		var pageX =
-			event.pageX - parallaxContainer.getBoundingClientRect().width * 0.5;
-
-		var pageY =
-			event.pageY - parallaxContainer.getBoundingClientRect().height * 0.5;
-
-		for (let i = 0; i < parallaxItems.length; i++) {
-			var item = parallaxItems[i];
-			var speedX = item.getAttribute("data-speed-x");
-			var speedY = item.getAttribute("data-speed-y");
-
-			TweenLite.set(item, {
-				x: (item.offsetLeft + pageX * speedX) * fixer,
-				y: (item.offsetTop + pageY * speedY) * fixer,
-			});
-		}
+document.addEventListener("mousemove", mouseMoveFunc);
+function mouseMoveFunc(e) {
+	const depth = 10;
+	const moveX = (e.pageX - window.innerWidth / 2) / depth;
+	const moveY = (e.pageY - window.innerHeight / 2) / depth;
+	gsap.to(".img__box", {
+		duration: 1,
+		x: moveX,
+		y: moveY,
+		ease: "slow",
+		stagger: 0.008,
+		overwrite: true,
 	});
-})();
+}

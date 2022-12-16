@@ -12,9 +12,9 @@
 		<script src="js/ScrollTrigger.min.js"></script>
 		<script src="js/locomotive-scroll.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
-		<script src="js/zepto.min.js"></script>
 	</head>
 	<body data-scroll-container>
+		<div id="cursor"></div>
 		<div class="preloader"></div>
 		<div id="wrapper">
 			<!-- header -->
@@ -125,7 +125,7 @@
 									data-scroll-speed="4"
 								>
 									<img
-										src="src/img/LOREAL0279240.jpg"
+										src="src/img/section02-3.jpg"
 										alt="loreal-image"
 										data-scroll
 										data-scroll-speed="-1"
@@ -176,14 +176,23 @@
 							<div id="sticky">
 								<div class="commitments__cont on">
 									<div class="commitments__cont_box">
-										<h3
-											class="commitments__box_left"
+										<div
+											class="txt__box"
 											data-scroll
 											data-scroll-sticky
 											data-scroll-target="#sticky"
 										>
-											FOR OUR PLANET
-										</h3>
+											<h3 class="commitments__box_left">FOR OUR PLANET</h3>
+											<div class="links view__more">
+												<div class="link">
+													<span class="link__cont">
+														<span class="link__text">VIEW MORE</span>
+														<span class="link__text">VIEW MORE</span>
+													</span>
+												</div>
+											</div>
+										</div>
+
 										<div class="commitments__box_right">
 											<h3>
 												L’Oréal for the Future, our sustainability commitments
@@ -377,7 +386,6 @@
 						</div>
 					</section>
 					<section class="section04" data-scroll-section>
-						<div id="cursor"></div>
 						<div class="inner">
 							<h2 data-scroll data-words data-scroll-offset="100">
 								<span class="word" style="--word-index: 1" data-word="Create"
@@ -403,7 +411,7 @@
 									>world.
 								</span>
 							</h2>
-							<div class="img__box" data-speed-x="200" data-speed-y="200">
+							<div class="img__box">
 								<img src="src/img/section04.jpg" alt="loreal" />
 							</div>
 						</div>

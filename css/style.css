@@ -187,7 +187,6 @@ h2.is-inview .word {
 }
 .section02 .image__cont .image__cont_box img {
   width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -199,21 +198,24 @@ h2.is-inview .word {
 .section02 .image__cont .image__cont_box.n01 {
   width: 60%;
   padding-bottom: 80%;
+  margin-left: 17%;
 }
 .section02 .image__cont .image__cont_box.n02 {
   margin-top: 50%;
   padding-bottom: 100%;
+  width: 70%;
+  margin-left: 5%;
 }
 .section02 .image__cont .image__cont_box.n03 {
   width: 60%;
   margin-left: 20%;
-  margin-top: -30%;
+  margin-top: -50%;
   padding-bottom: 80%;
 }
 .section02 .image__cont .image__cont_box.n04 {
   width: 70%;
-  margin-left: 20%;
-  margin-top: 40%;
+  margin-left: 13%;
+  margin-top: -10%;
   padding-bottom: 80%;
 }
 
@@ -294,51 +296,66 @@ h2.is-inview .word {
   border: 1px solid var(--color-white);
   border-radius: 20px;
 }
-.section03 .inner .commitments__cont {
+.section03 .inner #sticky {
+  margin-top: 10%;
+}
+.section03 .inner #sticky .commitments__cont {
   display: none;
   justify-content: space-between;
-  margin: 100px 0 50px 0;
+  margin-bottom: 50px;
 }
-.section03 .inner .commitments__cont.on {
+.section03 .inner #sticky .commitments__cont.on {
   display: block;
 }
-.section03 .inner .commitments__cont .commitments__cont_box {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_left {
-  width: 40%;
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .commitments__box_left {
+  width: 100%;
   font-size: 30px;
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_right {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more {
+  border-radius: 20px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  text-align: center;
+  font-size: var(--font-small);
+  width: 50%;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right {
   width: 55%;
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_right h3 {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right h3 {
   margin-bottom: 50px;
   font-size: 23px;
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_right table {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right table {
   border-collapse: collapse;
   border-top: 1px solid var(--color-white);
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_right table tr {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right table tr {
   vertical-align: baseline;
   text-align: left;
   border-bottom: 1px solid var(--color-white);
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_right table tr th {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right table tr th {
   width: 30%;
   padding: 10px 0;
 }
-.section03 .inner .commitments__cont .commitments__cont_box .commitments__box_right table tr td {
+.section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right table tr td {
   padding: 10px 0;
 }
 
 .section04 {
   padding: 100px;
-  background-color: var(--color-white);
   margin-bottom: 400px;
+  background-color: var(--color-white);
   pointer-events: none;
 }
 .section04 .inner {
@@ -368,7 +385,7 @@ h2.is-inview .word {
 .section04 h3 {
   text-align: center;
   margin-top: 100px;
-  font-size: var(--font-x-large);
+  font-size: var(--font-large);
   font-weight: var(--weight-regular);
   letter-spacing: 5px;
 }
