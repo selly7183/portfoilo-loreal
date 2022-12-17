@@ -43,3 +43,13 @@ a {
 	text-decoration: none;
 	color: var(--color-black);
 }
+
+@media (max-width: 989px) {
+	:root {
+		/* Font size */
+		--font-small: 11px;
+		--font-medium: 17px;
+		--font-large: 30px;
+		--font-x-large: 38px;
+	}
+}

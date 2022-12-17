@@ -598,15 +598,51 @@ footer {
 				}
 			}
 		}
+		.section03 {
+			.inner {
+				h2 {
+					font-size: 50px;
+				}
+				.commitments__tab {
+					padding: 40px 0 15px 0;
+				}
+				#sticky {
+					margin-top: 8%;
+					.commitments__cont {
+						.commitments__cont_box {
+							.txt__box {
+								.view__more {
+									margin-bottom: 20px;
+								}
+							}
+							flex-direction: column;
+							.commitments__box_right {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
 		footer {
 			.inner {
 				padding: 0 80px;
+				.footer__signature {
+					p {
+						font-size: 22px;
+					}
+					h3 {
+						font-size: 20px;
+					}
+				}
+
 				.footer__logo {
 					display: none;
 				}
-				aside {
-					margin-bottom: 40px;
-				}
+			}
+
+			aside {
+				margin-bottom: 40px;
 			}
 		}
 	}

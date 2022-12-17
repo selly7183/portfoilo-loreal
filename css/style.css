@@ -42,6 +42,15 @@ a {
   color: var(--color-black);
 }
 
+@media (max-width: 989px) {
+  :root {
+    /* Font size */
+    --font-small: 11px;
+    --font-medium: 17px;
+    --font-large: 30px;
+    --font-x-large: 38px;
+  }
+}
 /* 공통 */
 .preloader {
   position: fixed;
@@ -596,13 +605,37 @@ footer .inner aside ul li a:hover {
     height: calc(100vh - 223px);
     min-height: 250px;
   }
+  #wrapper .section03 .inner h2 {
+    font-size: 50px;
+  }
+  #wrapper .section03 .inner .commitments__tab {
+    padding: 40px 0 15px 0;
+  }
+  #wrapper .section03 .inner #sticky {
+    margin-top: 8%;
+  }
+  #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box {
+    flex-direction: column;
+  }
+  #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more {
+    margin-bottom: 20px;
+  }
+  #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right {
+    width: 100%;
+  }
   #wrapper footer .inner {
     padding: 0 80px;
+  }
+  #wrapper footer .inner .footer__signature p {
+    font-size: 22px;
+  }
+  #wrapper footer .inner .footer__signature h3 {
+    font-size: 20px;
   }
   #wrapper footer .inner .footer__logo {
     display: none;
   }
-  #wrapper footer .inner aside {
+  #wrapper footer aside {
     margin-bottom: 40px;
   }
 }
