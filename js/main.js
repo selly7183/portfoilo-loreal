@@ -15,7 +15,15 @@ const scroll = new LocomotiveScroll({
 });
 
 // header - fixed
-const header = document.querySelector("header");
+const burger = document.querySelector(".header__burger");
+const close = document.querySelector(".menu__close");
+const menu = document.querySelector(".menu");
+burger.addEventListener("click", () => {
+	menu.classList.add("menu__show");
+});
+close.addEventListener("click", () => {
+	menu.classList.remove("menu__show");
+});
 
 // section03 - tab
 const tabLi = document.querySelectorAll(".commitments__tab li");
