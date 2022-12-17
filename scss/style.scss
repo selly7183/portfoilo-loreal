@@ -270,6 +270,7 @@ h3.is-inview {
 		height: calc(100vh - 486px);
 		object-fit: cover;
 		filter: grayscale(1);
+		transition: 1s cubic-bezier(0.38, 0.005, 0.215, 1) 0.7s;
 	}
 }
 
@@ -586,6 +587,26 @@ footer {
 			}
 			.header__burger {
 				display: block;
+			}
+		}
+		.section01 {
+			.inner {
+				padding: 0px 80px 100px 80px;
+				video {
+					height: calc(100vh - 223px);
+					min-height: 250px;
+				}
+			}
+		}
+		footer {
+			.inner {
+				padding: 0 80px;
+				.footer__logo {
+					display: none;
+				}
+				aside {
+					margin-bottom: 40px;
+				}
 			}
 		}
 	}

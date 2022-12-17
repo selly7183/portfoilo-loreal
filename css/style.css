@@ -290,6 +290,7 @@ h3.is-inview .word {
   height: calc(100vh - 486px);
   object-fit: cover;
   filter: grayscale(1);
+  transition: 1s cubic-bezier(0.38, 0.005, 0.215, 1) 0.7s;
 }
 
 .section02 {
@@ -587,6 +588,22 @@ footer .inner aside ul li a:hover {
   }
   #wrapper header .header__burger {
     display: block;
+  }
+  #wrapper .section01 .inner {
+    padding: 0px 80px 100px 80px;
+  }
+  #wrapper .section01 .inner video {
+    height: calc(100vh - 223px);
+    min-height: 250px;
+  }
+  #wrapper footer .inner {
+    padding: 0 80px;
+  }
+  #wrapper footer .inner .footer__logo {
+    display: none;
+  }
+  #wrapper footer .inner aside {
+    margin-bottom: 40px;
   }
 }
 
