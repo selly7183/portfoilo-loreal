@@ -1,4 +1,10 @@
 "use strict";
+// preload
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", (e) => {
+	preloader.classList.add("preloader--hide");
+});
+
 //scroll smooth
 gsap.registerPlugin(ScrollTrigger);
 const scroll = new LocomotiveScroll({
@@ -8,32 +14,8 @@ const scroll = new LocomotiveScroll({
 	scrollFromAnywhere: true,
 });
 
-ScrollTrigger.create({
-	trigger: ".image__cont_box",
-	scroll: "[data-scroll-container]",
-	start: "top+=30% 50%",
-	end: "bottom-=40% 50%",
-	animation: gsap.to(".image__cont_box img", { with: "120%" }),
-	scrub: 2,
-	// markers: true
-});
-
-// preload
-const preloader = document.querySelector(".preloader");
-window.addEventListener("load", (e) => {
-	preloader.classList.add("preloader--hide");
-});
-
 // header - fixed
 const header = document.querySelector("header");
-const headerRect = header.getBoundingClientRect().height;
-document.addEventListener("scroll", () => {
-	if (scrollY > headerRect) {
-		header.classList.add("active");
-	} else {
-		header.classList.remove("active");
-	}
-});
 
 // section03 - tab
 const tabLi = document.querySelectorAll(".commitments__tab li");
