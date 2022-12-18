@@ -768,6 +768,7 @@ footer .inner aside ul li a:hover {
   }
   #wrapper .section04 .inner {
     flex-direction: column;
+    border-bottom: 1px solid var(--color-black);
   }
   #wrapper .section04 .inner h2 {
     font-size: var(--font-large);

@@ -802,6 +802,7 @@ footer {
 			margin-bottom: 100px;
 			.inner {
 				flex-direction: column;
+				border-bottom: 1px solid var(--color-black);
 				h2 {
 					font-size: var(--font-large);
 				}
