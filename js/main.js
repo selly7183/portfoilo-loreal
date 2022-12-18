@@ -12,6 +12,12 @@ const scroll = new LocomotiveScroll({
 	smooth: true,
 	lerp: 0.05,
 	scrollFromAnywhere: true,
+	smartphone: {
+		smooth: true,
+	},
+	tablet: {
+		smooth: true,
+	},
 });
 
 // header - fixed

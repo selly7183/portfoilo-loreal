@@ -437,7 +437,7 @@ br.vis-600 {
   border-radius: 20px;
 }
 .section03 .inner #sticky {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .section03 .inner #sticky .commitments__cont {
   display: none;
@@ -670,6 +670,7 @@ footer .inner aside ul li a:hover {
   #wrapper .section04 .inner {
     gap: 0;
     padding: 0;
+    justify-content: space-between;
   }
   #wrapper .section04 .inner h2 {
     font-size: var(--font-x-large);
@@ -743,10 +744,11 @@ footer .inner aside ul li a:hover {
     padding: 30px 0 15px 0;
   }
   #wrapper .section03 .inner .commitments__tab ul {
-    gap: 12px;
+    gap: 0px;
   }
   #wrapper .section03 .inner .commitments__tab ul li {
-    padding: 7px 10px;
+    padding: 7px 6px;
+    margin-right: 20px;
   }
   #wrapper .section03 .inner .commitments__tab ul li .link__text {
     font-size: 9px;
@@ -754,7 +756,7 @@ footer .inner aside ul li a:hover {
   #wrapper .section03 .inner .commitments__tab ul li::after {
     right: -10px;
     top: 4px;
-    height: 70%;
+    height: 65%;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more {
     margin-top: 10px;
@@ -769,8 +771,8 @@ footer .inner aside ul li a:hover {
     margin-bottom: 16px;
   }
   #wrapper .section04 {
-    padding: 50px 25px;
-    margin-bottom: 100px;
+    padding: 50px 0px 80px 0px;
+    margin-bottom: 0;
   }
   #wrapper .section04 .inner {
     flex-direction: column;
@@ -791,7 +793,7 @@ footer .inner aside ul li a:hover {
     padding: 0 25px;
   }
   #wrapper footer .inner .footer__signature {
-    padding-top: 355px;
+    padding-top: 300px;
   }
   #wrapper footer .inner .footer__signature h3 {
     font-size: var(--font-medium);

@@ -412,7 +412,7 @@ br.vis-600 {
 			}
 		}
 		#sticky {
-			margin-top: 15%;
+			margin-top: 10%;
 			.commitments__cont {
 				display: none;
 				justify-content: space-between;
@@ -676,6 +676,7 @@ footer {
 			.inner {
 				gap: 0;
 				padding: 0;
+				justify-content: space-between;
 				h2 {
 					font-size: var(--font-x-large);
 				}
@@ -765,16 +766,17 @@ footer {
 				.commitments__tab {
 					padding: 30px 0 15px 0;
 					ul {
-						gap: 12px;
+						gap: 0px;
 						li {
-							padding: 7px 10px;
+							padding: 7px 6px;
+							margin-right: 20px;
 							.link__text {
 								font-size: 9px;
 							}
 							&::after {
 								right: -10px;
 								top: 4px;
-								height: 70%;
+								height: 65%;
 							}
 						}
 					}
@@ -808,8 +810,8 @@ footer {
 			}
 		}
 		.section04 {
-			padding: 50px 25px;
-			margin-bottom: 100px;
+			padding: 50px 0px 80px 0px;
+			margin-bottom: 0;
 			.inner {
 				flex-direction: column;
 				border-bottom: 1px solid var(--color-black);
@@ -829,7 +831,7 @@ footer {
 		footer {
 			.inner {
 				.footer__signature {
-					padding-top: 355px;
+					padding-top: 300px;
 					h3 {
 						font-size: var(--font-medium);
 					}
