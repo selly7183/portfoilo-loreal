@@ -89,6 +89,9 @@ h3.is-inview {
 		display: inline;
 	}
 }
+br.vis-600 {
+	display: none;
+}
 
 #wrapper {
 	// header
@@ -471,7 +474,7 @@ h3.is-inview {
 
 // section04
 .section04 {
-	padding: 100px;
+	padding: 80px;
 	margin-bottom: 350px;
 	background-color: var(--color-white);
 	pointer-events: none;
@@ -493,7 +496,7 @@ h3.is-inview {
 			}
 		}
 		.img__box {
-			width: 30%;
+			width: 45%;
 			img {
 				width: 100%;
 				border-radius: 500px 500px 0 0;
@@ -598,29 +601,83 @@ footer {
 				}
 			}
 		}
+		.section02 {
+			.image__cont {
+				padding: 0 65px;
+				.image__cont_box {
+					&.n01 {
+						margin-left: 0;
+						width: 80%;
+					}
+					&.n02 {
+						margin-left: 5%;
+						width: 95%;
+					}
+					&.n03 {
+						margin-left: 10%;
+						width: 73%;
+					}
+					&.n04 {
+						margin-left: 14%;
+						margin-top: 0%;
+						width: 74%;
+					}
+				}
+			}
+		}
 		.section03 {
 			.inner {
+				padding: 0;
 				h2 {
-					font-size: 50px;
+					font-size: var(--font-x-large);
+				}
+				p {
+					font-size: var(--font-medium);
 				}
 				.commitments__tab {
 					padding: 40px 0 15px 0;
+					ul {
+						gap: 50px;
+					}
 				}
 				#sticky {
 					margin-top: 8%;
 					.commitments__cont {
 						.commitments__cont_box {
 							.txt__box {
+								.commitments__box_left {
+									font-size: var(--font-medium);
+								}
 								.view__more {
 									margin-bottom: 20px;
+									max-width: 100px;
 								}
 							}
 							flex-direction: column;
 							.commitments__box_right {
 								width: 100%;
+								table {
+									tr {
+										th {
+											font-size: var(--font-s-m);
+										}
+										td {
+											font-size: var(--font-s-m);
+										}
+									}
+								}
 							}
 						}
 					}
+				}
+			}
+		}
+		.section04 {
+			.inner {
+				gap: 0;
+				padding: 0;
+				h2 {
+					font-size: var(--font-x-large);
 				}
 			}
 		}
@@ -628,6 +685,7 @@ footer {
 			.inner {
 				padding: 0 80px;
 				.footer__signature {
+					padding-top: 400px;
 					p {
 						font-size: 22px;
 					}
@@ -643,6 +701,139 @@ footer {
 
 			aside {
 				margin-bottom: 40px;
+				ul {
+					gap: 0;
+					flex-direction: column;
+					align-items: flex-end;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	br.vis-600 {
+		display: block;
+	}
+	#wrapper {
+		header {
+			a {
+				img {
+					width: 85px;
+				}
+			}
+			.header__burger {
+				.header__burger-line {
+					margin: 6px 0;
+				}
+			}
+		}
+		.section01 {
+			margin-top: 55px;
+			.inner {
+				padding: 25px 25px 100px 25px;
+				video {
+					height: calc(100vh - 170px);
+				}
+			}
+		}
+		.section02 {
+			.image__cont {
+				padding: 0 10px;
+			}
+		}
+		.section03 {
+			padding: 50px 15px;
+			.inner {
+				padding: 0 10px;
+				h2 {
+					font-size: var(--font-large);
+				}
+				p {
+					font-size: var(--font-s-m);
+				}
+				.commitments__tab {
+					padding: 30px 0 15px 0;
+					ul {
+						gap: 12px;
+						li {
+							padding: 7px 10px;
+							.link__text {
+								font-size: 9px;
+							}
+							&::after {
+								right: -10px;
+								top: 4px;
+								height: 70%;
+							}
+						}
+					}
+				}
+				#sticky {
+					.commitments__cont {
+						.commitments__cont_box {
+							.txt__box {
+								.view__more {
+									margin-top: 10px;
+									padding: 6px 0;
+									margin-bottom: 9px;
+									.link {
+										.link__cont {
+											.link__text {
+												font-size: 9px;
+											}
+										}
+									}
+								}
+							}
+							.commitments__box_right {
+								h3 {
+									font-size: 15px;
+									margin-bottom: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.section04 {
+			padding: 50px 25px;
+			margin-bottom: 100px;
+			.inner {
+				flex-direction: column;
+				h2 {
+					font-size: var(--font-large);
+				}
+				.img__box {
+					margin: 35px 0;
+					transform: none !important;
+				}
+			}
+			h3 {
+				margin-top: 64px;
+				font-size: var(--font-medium);
+			}
+		}
+		footer {
+			.inner {
+				.footer__signature {
+					padding-top: 355px;
+					h3 {
+						font-size: var(--font-medium);
+					}
+					p {
+						font-size: var(--font-medium);
+					}
+				}
+				padding: 0 25px;
+				aside {
+					margin-bottom: 30px;
+					align-items: center;
+					.footer__copy {
+						display: block;
+					}
+				}
 			}
 		}
 	}
