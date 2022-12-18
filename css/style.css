@@ -703,6 +703,12 @@ footer .inner aside ul li a:hover {
     display: block;
   }
 
+  #wrapper .menu .menu__container .menu__links {
+    margin-bottom: 30px;
+  }
+  #wrapper .menu .menu__container .menu__links .menu__link {
+    font-size: var(--font-large);
+  }
   #wrapper header a img {
     width: 85px;
   }

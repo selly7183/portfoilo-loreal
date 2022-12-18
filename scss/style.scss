@@ -716,6 +716,16 @@ footer {
 		display: block;
 	}
 	#wrapper {
+		.menu {
+			.menu__container {
+				.menu__links {
+					margin-bottom: 30px;
+					.menu__link {
+						font-size: var(--font-large);
+					}
+				}
+			}
+		}
 		header {
 			a {
 				img {
