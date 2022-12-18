@@ -771,8 +771,8 @@ footer .inner aside ul li a:hover {
     margin-bottom: 16px;
   }
   #wrapper .section04 {
-    padding: 50px 0px 80px 0px;
-    margin-bottom: 0;
+    padding: 50px 25px 60px 25px;
+    margin-bottom: 100px;
   }
   #wrapper .section04 .inner {
     flex-direction: column;
