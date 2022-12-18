@@ -830,6 +830,10 @@ footer {
 				aside {
 					margin-bottom: 30px;
 					align-items: center;
+					font-size: 9px;
+					ul {
+						line-height: 1.2;
+					}
 					.footer__copy {
 						display: block;
 						line-height: 1;

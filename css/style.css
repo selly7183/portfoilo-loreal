@@ -795,6 +795,10 @@ footer .inner aside ul li a:hover {
   #wrapper footer .inner aside {
     margin-bottom: 30px;
     align-items: center;
+    font-size: 9px;
+  }
+  #wrapper footer .inner aside ul {
+    line-height: 1.2;
   }
   #wrapper footer .inner aside .footer__copy {
     display: block;
