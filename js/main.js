@@ -1,4 +1,5 @@
 "use strict";
+
 // preload
 const preloader = document.querySelector(".preloader");
 window.addEventListener("load", (e) => {
@@ -24,10 +25,11 @@ const scroll = new LocomotiveScroll({
 const burger = document.querySelector(".header__burger");
 const close = document.querySelector(".menu__close");
 const menu = document.querySelector(".menu");
-burger.addEventListener("click", () => {
+
+burger?.addEventListener("click", () => {
 	menu.classList.add("menu__show");
 });
-close.addEventListener("click", () => {
+close?.addEventListener("click", () => {
 	menu.classList.remove("menu__show");
 });
 
@@ -48,7 +50,7 @@ tabLi.forEach((item, index) => {
 // section03 - scrollIntoView
 const commitments = document.querySelector(".link_sec03");
 const section03 = document.querySelector(".section03");
-commitments.addEventListener("click", (e) => {
+commitments?.addEventListener("click", (e) => {
 	section03.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 

@@ -344,7 +344,7 @@ br.vis-600 {
 			.word {
 				display: block;
 				opacity: 0;
-				transition: 0.7s cubic-bezier(0.38, 0.005, 0.215, 1);
+				transition: 1.5s cubic-bezier(0.38, 0.005, 0.215, 1);
 				transition-delay: calc(0.1s * var(--word-index));
 			}
 			&.is-inview {

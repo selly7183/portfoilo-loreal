@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+:root {
+  /* Color */
+  --color-white: #fff;
+  --color-black: #000;
+  /* Font size */
+  --font-small: 13px;
+  --font-medium: 20px;
+  --font-large: 36px;
+  --font-x-large: 42px;
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+  position: relative;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+@media (max-width: 989px) {
+  :root {
+    /* Font size */
+    --font-small: 11px;
+    --font-s-m: 13px;
+    --font-medium: 17px;
+    --font-large: 30px;
+    --font-x-large: 38px;
+  }
+}
+body.about {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+body.about #wrapper header {
+  border-bottom: 1.5px solid var(--color-white);
+  background-color: var(--color-black);
+}
+body.about #wrapper header nav ul li a {
+  color: var(--color-white);
+}
+body.about #wrapper header nav ul li.join {
+  border: 1px solid var(--color-white);
+}
+body.about #wrapper .section01 .inner {
+  padding: 80px;
+}
+body.about #wrapper .section01 .inner h3.ceo__txt {
+  font-family: "Crimson Text", serif;
+  font-size: 70px;
+  font-weight: 100;
+  text-align: center;
+  visibility: hidden;
+}
+body.about #wrapper .section01 .inner h3.ceo__txt p {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-small);
+  font-family: "Noto Sans", sans-serif;
+  padding: 50px 0 80px 0;
+}
+body.about #wrapper .section01 .inner h3.ceo__txt.is-inview {
+  visibility: visible;
+}
+body.about #wrapper .section01 .inner h3.ceo__txt .word {
+  transition-delay: calc(0.02s * var(--word-index));
+}
+body.about #wrapper .section02 {
+  margin-top: -65%;
+}
+
+/*# sourceMappingURL=about.css.map */
