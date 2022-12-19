@@ -52,7 +52,7 @@ a {
   }
 }
 body.about {
-  background-color: var(--color-black);
+  background-color: var(--color-black) !important;
   color: var(--color-white);
 }
 body.about #wrapper header {
@@ -65,31 +65,91 @@ body.about #wrapper header nav ul li a {
 body.about #wrapper header nav ul li.join {
   border: 1px solid var(--color-white);
 }
-body.about #wrapper .section01 .inner {
-  padding: 80px;
+body.about #wrapper header .header__burger .header__burger-line {
+  background-color: var(--color-white);
 }
-body.about #wrapper .section01 .inner h3.ceo__txt {
+body.about #wrapper main {
+  z-index: 100;
+  position: absolute;
+}
+body.about #wrapper main .section01 {
+  background-color: var(--color-black);
+}
+body.about #wrapper main .section01 .inner {
+  padding: 80px;
+  position: relative;
+}
+body.about #wrapper main .section01 .inner h3.ceo__txt {
   font-family: "Crimson Text", serif;
   font-size: 70px;
   font-weight: 100;
   text-align: center;
   visibility: hidden;
 }
-body.about #wrapper .section01 .inner h3.ceo__txt p {
+body.about #wrapper main .section01 .inner h3.ceo__txt p {
   display: flex;
   justify-content: space-between;
   font-size: var(--font-small);
   font-family: "Noto Sans", sans-serif;
   padding: 50px 0 80px 0;
 }
-body.about #wrapper .section01 .inner h3.ceo__txt.is-inview {
+body.about #wrapper main .section01 .inner h3.ceo__txt.is-inview {
   visibility: visible;
 }
-body.about #wrapper .section01 .inner h3.ceo__txt .word {
+body.about #wrapper main .section01 .inner h3.ceo__txt .word {
   transition-delay: calc(0.02s * var(--word-index));
 }
-body.about #wrapper .section02 {
-  margin-top: -65%;
+body.about #wrapper main .section01 .inner .image__cont .image__cont_box {
+  overflow: initial;
+  margin-top: -50%;
+}
+body.about #wrapper main .section02 {
+  padding-top: 10%;
+  padding-bottom: 50px;
+  margin-top: -1px;
+  background-color: var(--color-black);
+}
+body.about #wrapper main .section02 .inner {
+  border: 1px solid var(--color-white);
+  padding: 40px;
+  margin-bottom: 100px;
+}
+body.about #wrapper main .section02 .inner h1 {
+  font-size: 60px;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 5%;
+}
+body.about #wrapper main .section02 .inner img {
+  margin: 0 auto;
+  filter: grayscale(1);
+  display: flex;
+}
+body.about #wrapper main .section02 .inner .ceo__txt_cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+body.about #wrapper main .section02 .inner .ceo__txt_cont .ceo__title {
+  width: 35%;
+  font-size: var(--font-medium);
+}
+body.about #wrapper main .section02 .inner .ceo__txt_cont .ceo__description {
+  width: 60%;
+  font-size: 18px;
+}
+body.about #wrapper main .section04 {
+  padding-bottom: 0;
+}
+body.about #wrapper main .section04 .inner h2 {
+  color: var(--color-black);
+}
+body.about #wrapper footer {
+  background: linear-gradient(180deg, #000000 0%, #000000 25%, #ffffff 25%, #ffffff 100%);
+}
+body.about #wrapper footer .footer__wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=about.css.map */

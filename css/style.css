@@ -312,20 +312,21 @@ br.vis-600 {
   z-index: -1;
   padding-top: 50%;
 }
-.section02 .image__cont {
+
+.image__cont {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
   padding: 0 80px;
 }
-.section02 .image__cont .image__cont_box {
+.image__cont .image__cont_box {
   width: 60%;
   padding-top: 50%;
   position: relative;
   overflow: hidden;
   filter: grayscale(1);
 }
-.section02 .image__cont .image__cont_box img {
+.image__cont .image__cont_box img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -335,24 +336,24 @@ br.vis-600 {
   -o-object-position: center;
   object-position: center;
 }
-.section02 .image__cont .image__cont_box.n01 {
+.image__cont .image__cont_box.n01 {
   width: 60%;
   padding-bottom: 80%;
   margin-left: 17%;
 }
-.section02 .image__cont .image__cont_box.n02 {
+.image__cont .image__cont_box.n02 {
   margin-top: 50%;
   padding-bottom: 100%;
   width: 70%;
   margin-left: 5%;
 }
-.section02 .image__cont .image__cont_box.n03 {
+.image__cont .image__cont_box.n03 {
   width: 60%;
   margin-left: 20%;
   margin-top: -50%;
   padding-bottom: 80%;
 }
-.section02 .image__cont .image__cont_box.n04 {
+.image__cont .image__cont_box.n04 {
   width: 70%;
   margin-left: 13%;
   margin-top: -10%;
