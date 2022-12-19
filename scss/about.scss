@@ -8,7 +8,11 @@ body.about {
 		header {
 			border-bottom: 1.5px solid var(--color-white);
 			background-color: var(--color-black);
-
+			a {
+				img {
+					filter: invert(1);
+				}
+			}
 			nav {
 				ul {
 					li {
@@ -99,6 +103,9 @@ body.about {
 			}
 			.section04 {
 				padding-bottom: 0;
+				h3 {
+					color: var(--color-black);
+				}
 				.inner {
 					h2 {
 						color: var(--color-black);
@@ -115,12 +122,10 @@ body.about {
 				#ffffff 25%,
 				#ffffff 100%
 			);
-			// top: auto;
-			// bottom: 0;
-			.footer__wrapper {
-				position: absolute;
-				bottom: 0;
-				left: 0;
+			.inner {
+				aside {
+					color: var(--color-black);
+				}
 			}
 		}
 	}

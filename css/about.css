@@ -59,6 +59,9 @@ body.about #wrapper header {
   border-bottom: 1.5px solid var(--color-white);
   background-color: var(--color-black);
 }
+body.about #wrapper header a img {
+  filter: invert(1);
+}
 body.about #wrapper header nav ul li a {
   color: var(--color-white);
 }
@@ -140,16 +143,17 @@ body.about #wrapper main .section02 .inner .ceo__txt_cont .ceo__description {
 body.about #wrapper main .section04 {
   padding-bottom: 0;
 }
+body.about #wrapper main .section04 h3 {
+  color: var(--color-black);
+}
 body.about #wrapper main .section04 .inner h2 {
   color: var(--color-black);
 }
 body.about #wrapper footer {
   background: linear-gradient(180deg, #000000 0%, #000000 25%, #ffffff 25%, #ffffff 100%);
 }
-body.about #wrapper footer .footer__wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+body.about #wrapper footer .inner aside {
+  color: var(--color-black);
 }
 
 /*# sourceMappingURL=about.css.map */

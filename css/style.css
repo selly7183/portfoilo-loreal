@@ -149,7 +149,7 @@ br.vis-600 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
   pointer-events: initial;
 }
 #wrapper header.header--hide {

@@ -104,7 +104,7 @@ br.vis-600 {
 		top: 0;
 		left: 0;
 		width: 100%;
-		z-index: 10;
+		z-index: 1000;
 		pointer-events: initial;
 		&.header--hide {
 			transition: 500ms cubic-bezier(0.34, 0.7, 0.27, 1);
