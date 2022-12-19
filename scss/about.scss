@@ -33,7 +33,7 @@ body.about {
 		}
 		main {
 			z-index: 100;
-			position: absolute;
+			position: relative;
 			.section01 {
 				background-color: var(--color-black);
 				.inner {

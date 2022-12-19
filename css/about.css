@@ -73,7 +73,7 @@ body.about #wrapper header .header__burger .header__burger-line {
 }
 body.about #wrapper main {
   z-index: 100;
-  position: absolute;
+  position: relative;
 }
 body.about #wrapper main .section01 {
   background-color: var(--color-black);
