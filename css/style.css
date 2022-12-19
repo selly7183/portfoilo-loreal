@@ -812,6 +812,7 @@ footer .inner aside ul li a:hover {
   #wrapper footer .inner aside .footer__copy {
     display: block;
     line-height: 1;
+    text-align: center;
   }
 }
 
