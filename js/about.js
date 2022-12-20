@@ -13,9 +13,3 @@ window.addEventListener("load", (e) => {
 		txt.classList.add("is-inview");
 	}, 1700);
 });
-
-//scroll smooth
-scroll.destroy();
-setTimeout(function () {
-	scroll.init();
-}, 100);

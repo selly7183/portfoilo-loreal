@@ -15,6 +15,7 @@ const scroll = new LocomotiveScroll({
 	scrollFromAnywhere: true,
 	getSpeed: true,
 	getDirection: true,
+	breakpoint: 0,
 	smartphone: {
 		smooth: true,
 	},
@@ -22,6 +23,20 @@ const scroll = new LocomotiveScroll({
 		smooth: true,
 	},
 });
+scroll.scrollTo("top", { duration: 0, disableLerp: true });
+var currentPosition = 0;
+var direction = "down";
+setTimeout(function () {
+	window.scrollTo(0, 0);
+	var resizeEvent = new Event("resize");
+	window.dispatchEvent(resizeEvent);
+}, 100);
+setTimeout(function () {
+	scroll.update();
+}, 100);
+setTimeout(function () {
+	scroll.update();
+}, 2500);
 
 // header - fixed
 const burger = document.querySelector(".header__burger");

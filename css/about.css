@@ -291,7 +291,7 @@ body.about #wrapper footer .inner .footer__wrapper aside {
 
 .has-scroll-smooth .head-about__images {
   position: absolute;
-  top: 15%;
+  top: 32%;
   width: calc(100% - 160px);
 }
 .has-scroll-smooth .head-about__container-image:nth-of-type(1) {
@@ -318,7 +318,7 @@ body.about #wrapper footer .inner .footer__wrapper aside {
     padding-bottom: 115px;
   }
   body.about #wrapper main .section01 .inner h3.ceo__txt {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     line-height: 1.1;
   }
   body.about #wrapper main .section01 .inner h3.ceo__txt p {
@@ -357,14 +357,10 @@ body.about #wrapper footer .inner .footer__wrapper aside {
   body.about #wrapper footer {
     height: 40vh;
   }
+
   .has-scroll-smooth .head-about__images {
     position: initial;
     width: auto;
-  }
-  .has-scroll-smooth .head-about__container-image:nth-of-type(1),
-.has-scroll-smooth .head-about__container-image:nth-of-type(2),
-.has-scroll-smooth .head-about__container-image:nth-of-type(3) {
-    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -372,11 +368,10 @@ body.about #wrapper footer .inner .footer__wrapper aside {
     padding: 30px;
   }
   body.about #wrapper main .section01 .inner h3.ceo__txt {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   body.about #wrapper main .section02 {
     padding: 30px;
-    padding-bottom: 15%;
   }
   body.about #wrapper main .section02 .inner {
     padding: 20px;
@@ -398,6 +393,12 @@ body.about #wrapper footer .inner .footer__wrapper aside {
   body.about #wrapper footer .inner h3 {
     margin-top: 15px;
     font-size: var(--font-medium);
+  }
+
+  .has-scroll-smooth .head-about__container-image:nth-of-type(1),
+.has-scroll-smooth .head-about__container-image:nth-of-type(2),
+.has-scroll-smooth .head-about__container-image:nth-of-type(3) {
+    width: 100%;
   }
 }
 
