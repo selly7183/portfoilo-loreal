@@ -77,6 +77,10 @@ body.about #wrapper main {
 }
 body.about #wrapper main .section01 {
   background-color: var(--color-black);
+  z-index: 99;
+  position: relative;
+  margin-top: 0;
+  padding-top: 120px;
 }
 body.about #wrapper main .section01 .inner {
   padding: 80px;
@@ -87,6 +91,7 @@ body.about #wrapper main .section01 .inner h3.ceo__txt {
   font-size: 70px;
   font-weight: 100;
   text-align: center;
+  text-transform: uppercase;
   visibility: hidden;
 }
 body.about #wrapper main .section01 .inner h3.ceo__txt p {
@@ -96,11 +101,12 @@ body.about #wrapper main .section01 .inner h3.ceo__txt p {
   font-family: "Noto Sans", sans-serif;
   padding: 50px 0 80px 0;
 }
+body.about #wrapper main .section01 .inner h3.ceo__txt .word {
+  display: inline-block;
+  transition-delay: calc(0.02s * var(--word-index));
+}
 body.about #wrapper main .section01 .inner h3.ceo__txt.is-inview {
   visibility: visible;
-}
-body.about #wrapper main .section01 .inner h3.ceo__txt .word {
-  transition-delay: calc(0.02s * var(--word-index));
 }
 body.about #wrapper main .section01 .inner .image__cont .image__cont_box {
   overflow: initial;
@@ -121,11 +127,50 @@ body.about #wrapper main .section02 .inner h1 {
   font-size: 60px;
   font-family: "Crimson Text", serif;
   margin-bottom: 5%;
+  text-transform: uppercase;
+}
+body.about #wrapper main .section02 .inner h1 .word {
+  display: inline-block;
 }
 body.about #wrapper main .section02 .inner img {
   margin: 0 auto;
   filter: grayscale(1);
   display: flex;
+  position: relative;
+}
+body.about #wrapper main .section02 .inner .ovf__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+body.about #wrapper main .section02 .inner .ovf__box > div {
+  display: flex;
+  animation: scrollText 100s infinite linear;
+}
+body.about #wrapper main .section02 .inner .ovf__box > div .txt__ovf {
+  font-size: 400px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 body.about #wrapper main .section02 .inner .ceo__txt_cont {
   display: flex;
@@ -135,24 +180,69 @@ body.about #wrapper main .section02 .inner .ceo__txt_cont {
 body.about #wrapper main .section02 .inner .ceo__txt_cont .ceo__title {
   width: 35%;
   font-size: var(--font-medium);
+  margin-top: -35px;
+}
+body.about #wrapper main .section02 .inner .ceo__txt_cont .ceo__title .word {
+  transition-delay: calc(0.01s * var(--word-index));
+  display: inline-block;
 }
 body.about #wrapper main .section02 .inner .ceo__txt_cont .ceo__description {
   width: 60%;
   font-size: 18px;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 500ms cubic-bezier(0.34, 0.7, 0.27, 1);
+}
+body.about #wrapper main .section02 .inner .ceo__txt_cont.is-inview .ceo__title .word {
+  opacity: 1;
+}
+body.about #wrapper main .section02 .inner .ceo__txt_cont.is-inview .ceo__description {
+  transform: translateY(0px);
+  opacity: 1;
 }
 body.about #wrapper main .section04 {
-  padding-bottom: 0;
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
-body.about #wrapper main .section04 h3 {
+body.about #wrapper main .section04 .inner {
+  justify-content: space-evenly;
+}
+body.about #wrapper main .section04 .inner h3 {
   color: var(--color-black);
+  margin-bottom: 100px;
+}
+body.about #wrapper main .section04 .inner h3 .word {
+  display: inline-block;
 }
 body.about #wrapper main .section04 .inner h2 {
   color: var(--color-black);
 }
 body.about #wrapper footer {
-  background: linear-gradient(180deg, #000000 0%, #000000 25%, #ffffff 25%, #ffffff 100%);
+  background-color: #fff;
+  top: auto;
+  bottom: 0;
+  height: 75vh;
 }
-body.about #wrapper footer .inner aside {
+body.about #wrapper footer .inner {
+  justify-content: space-between;
+}
+body.about #wrapper footer .inner h3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  font-size: var(--font-large);
+  font-weight: var(--weight-regular);
+  letter-spacing: 5px;
+}
+body.about #wrapper footer .inner h3 .word {
+  color: var(--color-black);
+  opacity: 1;
+  display: inline-block;
+}
+body.about #wrapper footer .inner .footer__wrapper {
+  width: 100%;
+}
+body.about #wrapper footer .inner .footer__wrapper aside {
   color: var(--color-black);
 }
 
