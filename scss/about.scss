@@ -304,10 +304,10 @@ body.about {
 					.inner {
 						padding-bottom: 115px;
 						h3.ceo__txt {
-							font-size: 2.5rem;
+							font-size: 1.7rem;
 							line-height: 1.1;
 							p {
-								padding: 50px 0;
+								padding: 50px 0 30px 0;
 							}
 						}
 					}
@@ -349,14 +349,9 @@ body.about {
 				//z-index: 1000;
 				height: 40vh;
 				.inner {
-					.footer__wrapper {
-					}
 				}
 			}
 		}
-	}
-	.head-about__images {
-		//margin-top: -65%;
 	}
 
 	.has-scroll-smooth {
@@ -364,11 +359,10 @@ body.about {
 			position: initial;
 			width: auto;
 		}
-		.head-about__container-image:nth-of-type(1) {
-			width: 75%;
-		}
+		.head-about__container-image:nth-of-type(1),
+		.head-about__container-image:nth-of-type(2),
 		.head-about__container-image:nth-of-type(3) {
-			width: 85%;
+			width: 100%;
 		}
 	}
 }
@@ -386,11 +380,11 @@ body.about {
 				}
 				.section02 {
 					padding: 30px;
-					padding-bottom: 20%;
+					padding-bottom: 15%;
 					.inner {
 						padding: 20px;
 						h1 {
-							font-size: var(--font-large);
+							font-size: 25px;
 							font-weight: 100;
 							line-height: 1;
 						}
@@ -409,7 +403,7 @@ body.about {
 				height: 20vh;
 				.inner {
 					h3 {
-						margin-top: 20px;
+						margin-top: 15px;
 						font-size: var(--font-medium);
 					}
 				}

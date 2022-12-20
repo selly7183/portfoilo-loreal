@@ -12,7 +12,9 @@ const scroll = new LocomotiveScroll({
 	el: document.querySelector("[data-scroll-container]"),
 	smooth: true,
 	lerp: 0.05,
-	// scrollFromAnywhere: true,
+	scrollFromAnywhere: true,
+	getSpeed: true,
+	getDirection: true,
 	smartphone: {
 		smooth: true,
 	},
