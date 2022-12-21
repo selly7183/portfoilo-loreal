@@ -15,7 +15,7 @@
 		<script src="js/locomotive-scroll.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 	</head>
-	<body data-scroll-container>
+	<body>
 		<div class="preloader"></div>
 		<div id="wrapper">
 			<!-- header -->
@@ -92,7 +92,7 @@
 				</div>
 			</div>
 			<!-- main -->
-			<main>
+			<main data-scroll-container>
 				<section class="section01" data-scroll-section>
 					<div class="inner">
 						<h3 class="ceo__txt" data-words>
@@ -601,6 +601,7 @@
 						</div>
 					</div>
 				</section>
+				<section class="spacer" data-scroll-section></section>
 			</main>
 
 			<!-- footer -->

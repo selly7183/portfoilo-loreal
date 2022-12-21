@@ -34,17 +34,17 @@ body.about {
 		main {
 			z-index: 100;
 			position: relative;
-
+			padding-top: 70px;
 			.section01 {
 				background-color: var(--color-black);
 				z-index: 99;
 				position: relative;
 				margin-top: 0;
-				padding-top: 120px;
+
 				.inner {
 					padding: 80px;
 					position: relative;
-					padding-bottom: 20%;
+					padding-bottom: 12%;
 					h3.ceo__txt {
 						font-family: "Crimson Text", serif;
 						font-size: 4rem;
@@ -72,12 +72,12 @@ body.about {
 			.section02 {
 				padding: 80px;
 				padding-bottom: 50px;
-				margin-top: -1px;
+				margin-top: -5px;
 				background-color: var(--color-black);
 				.inner {
 					border: 1px solid var(--color-white);
 					padding: 40px;
-					margin-bottom: 100px;
+
 					h1 {
 						font-size: 60px;
 						font-family: "Crimson Text", serif;
@@ -183,17 +183,17 @@ body.about {
 		}
 
 		footer {
-			// background: linear-gradient(
-			// 	180deg,
-			// 	#000000 0%,
-			// 	#000000 25%,
-			// 	#ffffff 25%,
-			// 	#ffffff 100%
-			// );
-			background-color: #fff;
-			top: auto;
-			bottom: 0;
-			height: 75vh;
+			background: linear-gradient(
+				180deg,
+				#000000 0%,
+				#000000 25%,
+				#ffffff 25%,
+				#ffffff 100%
+			);
+			//background-color: #fff;
+			//top: auto;
+			//bottom: 0;
+			//height: 75vh;
 			.inner {
 				justify-content: space-between;
 

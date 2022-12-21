@@ -74,18 +74,18 @@ body.about #wrapper header .header__burger .header__burger-line {
 body.about #wrapper main {
   z-index: 100;
   position: relative;
+  padding-top: 70px;
 }
 body.about #wrapper main .section01 {
   background-color: var(--color-black);
   z-index: 99;
   position: relative;
   margin-top: 0;
-  padding-top: 120px;
 }
 body.about #wrapper main .section01 .inner {
   padding: 80px;
   position: relative;
-  padding-bottom: 20%;
+  padding-bottom: 12%;
 }
 body.about #wrapper main .section01 .inner h3.ceo__txt {
   font-family: "Crimson Text", serif;
@@ -112,13 +112,12 @@ body.about #wrapper main .section01 .inner h3.ceo__txt.is-inview {
 body.about #wrapper main .section02 {
   padding: 80px;
   padding-bottom: 50px;
-  margin-top: -1px;
+  margin-top: -5px;
   background-color: var(--color-black);
 }
 body.about #wrapper main .section02 .inner {
   border: 1px solid var(--color-white);
   padding: 40px;
-  margin-bottom: 100px;
 }
 body.about #wrapper main .section02 .inner h1 {
   font-size: 60px;
@@ -215,10 +214,7 @@ body.about #wrapper main .section04 .inner h2 {
   color: var(--color-black);
 }
 body.about #wrapper footer {
-  background-color: #fff;
-  top: auto;
-  bottom: 0;
-  height: 75vh;
+  background: linear-gradient(180deg, #000000 0%, #000000 25%, #ffffff 25%, #ffffff 100%);
 }
 body.about #wrapper footer .inner {
   justify-content: space-between;

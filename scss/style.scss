@@ -99,6 +99,12 @@ h3.is-inview {
 br.vis-600 {
 	display: none;
 }
+.spacer {
+	display: block;
+	width: 100%;
+	pointer-events: none !important;
+	height: 300px !important;
+}
 
 #wrapper {
 	// header
