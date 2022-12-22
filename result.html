@@ -42,10 +42,17 @@
 				border-radius: 30px;
 				background-color: var(--color-white);
 				margin-top: 50px;
+				transition: 1.5s cubic-bezier(0.38, 0.005, 0.215, 1);
 			}
 			button a {
 				padding: 10px 20px;
 				display: block;
+			}
+			button:hover {
+				background-color: var(--color-black);
+			}
+			button:hover a {
+				color: var(--color-white);
 			}
 			@media (max-width: 989px) {
 				.section01 .inner {

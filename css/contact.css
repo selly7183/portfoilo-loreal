@@ -138,7 +138,7 @@ body.contact .section01 .inner .contact__wrap .contact__form form fieldset table
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 0;
-  transition: all 0.3s ease-in-out;
+  transition: 0.5s cubic-bezier(0.38, 0.005, 0.215, 1);
   cursor: pointer;
 }
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th:hover input {
