@@ -99,6 +99,9 @@ h3.is-inview {
 br.vis-600 {
 	display: none;
 }
+br.vis-989 {
+	display: none;
+}
 .spacer {
 	display: block;
 	width: 100%;
@@ -595,6 +598,9 @@ footer {
 
 // 반응형
 @media (max-width: 989px) {
+	br.vis-989 {
+		display: block;
+	}
 	#wrapper {
 		header {
 			padding: 5px 0;
