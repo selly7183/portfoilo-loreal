@@ -144,9 +144,7 @@ body.contact {
 		background: var(--color-white);
 		.inner {
 			justify-content: flex-end;
-			h3 {
-				top: -450px;
-			}
+
 			.contact__wrap {
 				.contact__info {
 					li {
@@ -155,12 +153,6 @@ body.contact {
 						}
 					}
 				}
-			}
-			.footer__wrapper {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				padding: 0 80px;
 			}
 		}
 	}
@@ -216,13 +208,6 @@ body.contact {
 				}
 			}
 		}
-		footer {
-			.inner {
-				h3 {
-					top: -200px;
-				}
-			}
-		}
 	}
 }
 
@@ -233,16 +218,6 @@ body.contact {
 			.inner {
 				.contact__us {
 					font-size: var(--font-large);
-				}
-			}
-		}
-		footer {
-			.inner {
-				h3 {
-					top: -164px;
-				}
-				.footer__wrapper {
-					padding: 0 25px;
 				}
 			}
 		}

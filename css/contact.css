@@ -183,17 +183,8 @@ body.contact footer {
 body.contact footer .inner {
   justify-content: flex-end;
 }
-body.contact footer .inner h3 {
-  top: -450px;
-}
 body.contact footer .inner .contact__wrap .contact__info li p:nth-child(2) {
   font-size: var(--font-s-m);
-}
-body.contact footer .inner .footer__wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 80px;
 }
 
 @media (max-width: 989px) {
@@ -234,9 +225,6 @@ body.contact footer .inner .footer__wrapper {
   body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.submit {
     width: 100%;
   }
-  body.contact footer .inner h3 {
-    top: -200px;
-  }
 }
 @media (max-width: 600px) {
   body.contact .section01 {
@@ -244,12 +232,6 @@ body.contact footer .inner .footer__wrapper {
   }
   body.contact .section01 .inner .contact__us {
     font-size: var(--font-large);
-  }
-  body.contact footer .inner h3 {
-    top: -164px;
-  }
-  body.contact footer .inner .footer__wrapper {
-    padding: 0 25px;
   }
 }
 
