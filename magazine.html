@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loreal</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/magazine.css" />
+		<link rel="stylesheet" href="css/locomotive-scroll.css" />
+		<script defer src="js/main.js"></script>
+		<script defer src="js/magazine.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/locomotive-scroll.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+	</head>
+	<body data-scroll-container>
+		<div class="preloader"></div>
+		<div id="wrapper">
+			<!-- header -->
+			<header>
+				<div class="inner">
+					<a href="index.html">
+						<img src="src/img/loreal-logo.png" alt="logo" />
+					</a>
+					<nav>
+						<ul class="links">
+							<li>
+								<a href="./about.html" class="link">
+									<span class="link__cont">
+										<span class="link__text">ABOUT</span>
+										<span class="link__text">ABOUT</span>
+									</span>
+								</a>
+							</li>
+							<li class="link">
+								<span class="link__cont link_sec03">
+									<span class="link__text">COMMITMENTS</span>
+									<span class="link__text">COMMITMENTS</span>
+								</span>
+							</li>
+							<li>
+								<a href="./brand.html" class="link">
+									<span class="link__cont">
+										<span class="link__text">BRANDS</span>
+										<span class="link__text">BRANDS</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="./magazine.html" class="link">
+									<span class="link__cont">
+										<span class="link__text">MAGAZINE</span>
+										<span class="link__text">MAGAZINE</span>
+									</span>
+								</a>
+							</li>
+							<li class="join">
+								<a href="./contact.html" class="link">
+									<span class="link__cont">
+										<span class="link__text">CONTACT</span>
+										<span class="link__text">CONTACT</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__burger">
+						<span class="header__burger-line"></span>
+						<span class="header__burger-line"></span>
+						<span class="header__burger-line"></span>
+					</div>
+				</div>
+			</header>
+			<!-- mo menu -->
+			<div class="menu">
+				<div class="menu__close">
+					<span class="menu__line"></span>
+					<span class="menu__line"></span>
+				</div>
+				<div class="menu__container">
+					<div class="menu__links">
+						<a href="./about.html" class="menu__link">ABOUT</a>
+						<a href="" class="menu__link">COMMITMENTS</a>
+						<a href="./brand.html" class="menu__link">BRANDS</a>
+						<a href="./magazine.html" class="menu__link">MAGAZINE</a>
+					</div>
+					<div class="menu__link-join">
+						<a href="./contact.html" class="menu__link">CONTACT</a>
+					</div>
+				</div>
+			</div>
+			<!-- main -->
+			<main>
+				<section class="section01" data-scroll-section>
+					<div class="inner">
+						<h1>BEAUTY MEGAGINE</h1>
+						<div class="meagzine__categories">
+							<div class="magazine__tab">
+								<ul>
+									<li class="magazine__btn selected" data-filter="*">All</li>
+									<li class="magazine__btn" data-filter="skin">Skin Care</li>
+									<li class="magazine__btn" data-filter="hair">Hair Color</li>
+									<li class="magazine__btn" data-filter="beauty">
+										Beauty Looks
+									</li>
+									<li class="magazine__btn" data-filter="hairstyle">
+										HairStyle
+									</li>
+								</ul>
+							</div>
+							<div class="magazine__cont">
+								<ul>
+									<li class="item" data-type="skin">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img src="src/img/magazine/magazine01.jpg" alt="" />
+												</div>
+												<div class="magazine__desc">
+													<span>SKIN CARE</span>
+													<h3>
+														The Best Products to Store in a Skin Care Fridge
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="skin">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img src="src/img/magazine/magazine03.jpg" alt="" />
+												</div>
+												<div class="magazine__desc">
+													<span>SKIN CARE</span>
+													<h3>
+														15 Skin Care Products and Trends Everyone Should Try
+														in 2022
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="skin">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img src="src/img/magazine/magazine02.jpg" alt="" />
+												</div>
+												<div class="magazine__desc">
+													<span>SKIN CARE</span>
+													<h3>
+														How to Use Vitamin C, Retinol and Hyaluronic Acid
+														Together for Your Skin
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="skin">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img src="src/img/magazine/magazine04.jpg" alt="" />
+												</div>
+												<div class="magazine__desc">
+													<span>SKIN CARE</span>
+													<h3>
+														Skin Care Essentials: How To Treat Dry Eyelids
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="hair">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine01-hair.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>HAIR COLOR TRENDS</span>
+													<h3>How to Safely Bleach Your Hair at Home</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="hair">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine02-hair.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>HAIR COLOR TRENDS</span>
+													<h3>
+														25 Rainbow Hair Color Ideas for Your Most
+														Magnificent Mane
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="beauty">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine01-beauty.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>BEAUTY LOOKS</span>
+													<h3>
+														Camille Razat’s Beauty Routine Includes Antiseptic
+														Cream And Lots Of Time On Brows
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="beauty">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine02-beauty.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>BEAUTY LOOKS </span>
+													<h3>
+														5 Easy Steps to Create Your Holiday Makeup Look
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="hairstyle">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine01-ht.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>HAIR STYLE TRENDS</span>
+													<h3>
+														15 Of the Best Blunt Haircuts for Your New Year Glow
+														Up
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="hairstyle">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine02-ht.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>HAIR STYLE TRENDS</span>
+													<h3>9 Hairstyles That Flatter Square Faces</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="hairstyle">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine03-beauty.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>BEAUTY LOOKS </span>
+													<h3>
+														10 Products To Help You Get Camila Cabello’s VMAs
+														Glow
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="item" data-type="hair">
+										<a href="">
+											<div class="magazine__cont-box">
+												<div class="magazine__image">
+													<img
+														src="src/img/magazine/magazine03-hair.jpg"
+														alt=""
+													/>
+												</div>
+												<div class="magazine__desc">
+													<span>HAIR COLOR TRENDS</span>
+													<h3>
+														How To Get Gorgeous Peach Colored Hair at Home
+													</h3>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="spacer" data-scroll-section></section>
+			</main>
+			<!-- footer -->
+			<footer>
+				<div class="inner">
+					<h3>
+						<span class="word" style="--word-index: 2" data-word="A">A </span>
+						<span class="word" style="--word-index: 4" data-word="unique"
+							>unique
+						</span>
+						<span class="word" style="--word-index: 6" data-word="Beauty"
+							>Beauty
+						</span>
+						<span class="word" style="--word-index: 8" data-word="leader"
+							>leader
+						</span>
+					</h3>
+					<div class="footer__wrapper">
+						<img
+							src="src/img/footer-logo.png"
+							class="footer__logo"
+							alt="logo"
+						/>
+						<aside>
+							<p class="footer__title">LOREAL</p>
+							<p class="footer__copy">
+								&copy; LOREAL PARIS 2022. <br class="vis-600" />All rights
+								reserved.
+							</p>
+							<ul>
+								<li><a href="">FACEBOOK</a></li>
+								<li><a href="">INSTAGRAM</a></li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -91,34 +91,3 @@ function isSelect(name) {
 		return false;
 	}
 }
-
-gsap.registerPlugin(ScrollTrigger);
-const scroll2 = new LocomotiveScroll({
-	el: document.querySelector("[data-scroll-container]"),
-	smooth: true,
-	lerp: 0.05,
-	scrollFromAnywhere: true,
-	getSpeed: true,
-	getDirection: true,
-	breakpoint: 0,
-	smartphone: {
-		smooth: true,
-	},
-	tablet: {
-		smooth: true,
-	},
-});
-scroll2.scrollTo("top", { duration: 0, disableLerp: true });
-var currentPosition = 0;
-var direction = "down";
-setTimeout(function () {
-	window.scrollTo(0, 0);
-	var resizeEvent = new Event("resize");
-	window.dispatchEvent(resizeEvent);
-}, 100);
-setTimeout(function () {
-	scroll.update();
-}, 100);
-setTimeout(function () {
-	scroll.update();
-}, 2500);
