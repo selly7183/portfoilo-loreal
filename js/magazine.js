@@ -1,6 +1,16 @@
 "use strict";
+
+// body add class 'magazine'
+const contact = document.querySelector(".contact__us");
+window.addEventListener("load", (e) => {
+	setTimeout(() => {
+		contact?.classList.add("is-inview");
+		magazineCategory?.classList.add("is-inview");
+	}, 1700);
+});
+
 // magazine filter
-const magazineCategory = document.querySelector(".meagzine__categories");
+const magazineCategory = document.querySelector(".magazine__categories");
 const magazineCont = document.querySelector(".magazine__cont");
 const items = document.querySelectorAll(".magazine__cont .item");
 magazineCategory.addEventListener("click", (e) => {

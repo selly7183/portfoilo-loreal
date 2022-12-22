@@ -7,9 +7,11 @@ window.addEventListener("load", (e) => {
 
 // window load add 'is-inview'
 const contact = document.querySelector(".contact__us");
+const wrap = document.querySelector(".contact__wrap");
 window.addEventListener("load", (e) => {
 	setTimeout(() => {
 		contact?.classList.add("is-inview");
+		wrap?.classList.add("is-inview");
 	}, 1700);
 });
 
