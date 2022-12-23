@@ -55,7 +55,7 @@ a {
   background-color: var(--color-white);
 }
 .section01 .inner {
-  padding: 25px 80px 80px 80px;
+  padding: 25px 80px 40px 80px;
 }
 .section01 .inner h1 {
   font-size: 80px;

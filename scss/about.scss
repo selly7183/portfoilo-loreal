@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import "reset";
 
+// about
 body.about {
 	background-color: var(--color-black) !important;
 	color: var(--color-white);
@@ -286,6 +287,51 @@ footer {
 				margin-top: -30%;
 				padding-bottom: 60%;
 			}
+		}
+	}
+}
+
+// brand
+body.about #wrapper .brand {
+	.section01 {
+		.inner {
+			.ceo__txt {
+				.brand__focus {
+					font-size: 15px;
+					.word {
+						display: inline-block;
+					}
+				}
+				.brand__title {
+					font-size: var(--font-large);
+					margin-bottom: 20px;
+					.word {
+						display: inline-block;
+					}
+				}
+			}
+			.brand__desc {
+				visibility: hidden;
+				font-family: "Crimson Text", serif;
+				font-size: 23px;
+				.word {
+					display: inline-block;
+					transform: translateY(40px);
+					transition-delay: calc(0.05s * var(--word-index));
+				}
+				&.is-inview {
+					visibility: visible;
+					.word {
+						opacity: 1;
+						transform: translateY(0px);
+					}
+				}
+			}
+		}
+	}
+	.section02 {
+		.inner {
+			border: none;
 		}
 	}
 }

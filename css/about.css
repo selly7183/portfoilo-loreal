@@ -307,6 +307,40 @@ footer .inner .footer__wrapper aside {
   padding-bottom: 60%;
 }
 
+body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus {
+  font-size: 15px;
+}
+body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus .word {
+  display: inline-block;
+}
+body.about #wrapper .brand .section01 .inner .ceo__txt .brand__title {
+  font-size: var(--font-large);
+  margin-bottom: 20px;
+}
+body.about #wrapper .brand .section01 .inner .ceo__txt .brand__title .word {
+  display: inline-block;
+}
+body.about #wrapper .brand .section01 .inner .brand__desc {
+  visibility: hidden;
+  font-family: "Crimson Text", serif;
+  font-size: 23px;
+}
+body.about #wrapper .brand .section01 .inner .brand__desc .word {
+  display: inline-block;
+  transform: translateY(40px);
+  transition-delay: calc(0.05s * var(--word-index));
+}
+body.about #wrapper .brand .section01 .inner .brand__desc.is-inview {
+  visibility: visible;
+}
+body.about #wrapper .brand .section01 .inner .brand__desc.is-inview .word {
+  opacity: 1;
+  transform: translateY(0px);
+}
+body.about #wrapper .brand .section02 .inner {
+  border: none;
+}
+
 @media (max-width: 989px) {
   body.about #wrapper main {
     padding-top: 0;

@@ -13,3 +13,10 @@ window.addEventListener("load", (e) => {
 		txt?.classList.add("is-inview");
 	}, 1700);
 });
+
+const brandDesc = document.querySelector(".brand__desc");
+window.addEventListener("load", (e) => {
+	setTimeout(() => {
+		brandDesc?.classList.add("is-inview");
+	}, 2100);
+});
