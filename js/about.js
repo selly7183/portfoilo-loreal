@@ -24,6 +24,7 @@ window.addEventListener("load", (e) => {
 const swiper = new Swiper(".swiper", {
 	// Optional parameters
 	// direction: "vertical",
+	slidesPerView: 3,
 	loop: true,
 
 	// If we need pagination
