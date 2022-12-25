@@ -95,7 +95,12 @@
 			</div>
 			<!-- main -->
 			<main class="brand">
-				<section class="section01" data-scroll-section>
+				<section
+					class="section01"
+					data-scroll-section
+					data-scroll-repeat="true"
+					data-scroll
+				>
 					<div class="inner">
 						<h1 class="ceo__txt" data-words>
 							<p class="brand__focus">
@@ -160,6 +165,7 @@
 							<span class="word" style="--word-index: 11" data-word="Divisions">
 								Divisions,
 							</span>
+							<br />
 							<span class="word" style="--word-index: 12" data-word="with">
 								with
 							</span>
@@ -252,139 +258,153 @@
 								Division.
 							</span>
 						</p>
+						<div class="ovf__box">
+							<div>
+								<div class="txt__ovf">OUR GLOBAL BRANDS PORTFOLIO</div>
+								<div class="txt__ovf">OUR GLOBAL BRANDS PORTFOLIO</div>
+								<div class="txt__ovf">OUR GLOBAL BRANDS PORTFOLIO</div>
+								<div class="txt__ovf">OUR GLOBAL BRANDS PORTFOLIO</div>
+							</div>
+						</div>
 					</div>
 				</section>
-				<section class="section02" data-scroll-section>
-					<div class="inner">
+				<section
+					class="section02"
+					data-scroll-section
+					data-scroll-repeat="true"
+					data-scroll
+				>
+					<div class="inner" id="fixed-target">
 						<div class="brand__devision">
 							<div class="brand__devision-title">
-								<ul>
-									<li>L'Oréal Luxe</li>
-									<li>Consumer Products</li>
-									<li>Active Cosmetics</li>
-									<li>Professional Products</li>
+								<ul
+									data-scroll
+									data-scroll-sticky
+									data-scroll-target="#fixed-target"
+									data-scroll-repeat="true"
+									id="mm-projects-nav"
+								>
+									<li id="nav-btn-1" class="mm-projects-nav-btn active">
+										<a href="#category-1st" id="last-btn" data-scroll-to
+											>L'Oréal Luxe</a
+										>
+									</li>
+									<li id="nav-btn-2" class="mm-projects-nav-btn">
+										<a href="#category-old" id="old-btn" data-scroll-to>
+											Consumer Products
+										</a>
+									</li>
+									<li id="nav-btn-3" class="mm-projects-nav-btn">
+										<a herf="#category-arc" id="archive-btn" data-scroll-to
+											>Active Cosmetics</a
+										>
+									</li>
+									<li id="nav-btn-4" class="mm-projects-nav-btn">
+										<a href="#category-plg" id="playground-btn"
+											>Professional Products
+										</a>
+									</li>
 								</ul>
 							</div>
 							<div class="brand__devision-slide">
 								<div class="brand__inner">
-									<div class="brand__cont box01">
-										<!-- Slider main container -->
-										<div class="swiper swiper-container">
-											<!-- Additional required wrapper -->
+									<div class="brand__cont" id="category-1st">
+										<div
+											data-scroll=""
+											data-scroll-repeat="true"
+											data-scroll-call="lst_pr"
+										></div>
+										<div class="swiper">
 											<div class="swiper-wrapper">
-												<!-- Slides -->
-
 												<div class="swiper-slide">
 													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about02.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about01.png" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/LOREAL0279240.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 											</div>
-											<!-- If we need pagination -->
-											<div class="swiper-pagination"></div>
 
-											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
-
-											<!-- If we need scrollbar -->
 											<div class="swiper-scrollbar"></div>
 										</div>
 									</div>
-									<div class="brand__cont box02">
-										<!-- Slider main container -->
+									<div class="brand__cont" id="category-old">
+										<div
+											data-scroll=""
+											data-scroll-repeat="true"
+											data-scroll-call="old_pr"
+										></div>
 										<div class="swiper">
-											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
-												<!-- Slides -->
 												<div class="swiper-slide">
 													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about02.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about01.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/LOREAL0279240.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 											</div>
-											<!-- If we need pagination -->
-											<div class="swiper-pagination"></div>
 
-											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
-
-											<!-- If we need scrollbar -->
 											<div class="swiper-scrollbar"></div>
 										</div>
 									</div>
-									<div class="brand__cont box03">
-										<!-- Slider main container -->
+									<div class="brand__cont" id="category-arc">
+										<div
+											data-scroll=""
+											data-scroll-repeat="true"
+											data-scroll-call="arc_pr"
+										></div>
 										<div class="swiper">
-											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
-												<!-- Slides -->
 												<div class="swiper-slide">
 													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about02.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about01.png" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/LOREAL0279240.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 											</div>
-											<!-- If we need pagination -->
-											<div class="swiper-pagination"></div>
 
-											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
-
-											<!-- If we need scrollbar -->
 											<div class="swiper-scrollbar"></div>
 										</div>
 									</div>
-									<div class="brand__cont box04">
-										<!-- Slider main container -->
+									<div class="brand__cont" id="category-plg">
+										<div
+											data-scroll=""
+											data-scroll-repeat="true"
+											data-scroll-call="plg_pr"
+										></div>
 										<div class="swiper">
-											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
-												<!-- Slides -->
 												<div class="swiper-slide">
 													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about02.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/about01.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 												<div class="swiper-slide">
-													<img src="src/img/LOREAL0279240.jpg" alt="" />
+													<img src="src/img/brand/brand01.jpg" alt="" />
 												</div>
 											</div>
-											<!-- If we need pagination -->
-											<div class="swiper-pagination"></div>
 
-											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
-
-											<!-- If we need scrollbar -->
 											<div class="swiper-scrollbar"></div>
 										</div>
 									</div>

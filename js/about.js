@@ -21,25 +21,68 @@ window.addEventListener("load", (e) => {
 	}, 2100);
 });
 
+// brand slide
 const swiper = new Swiper(".swiper", {
-	// Optional parameters
-	// direction: "vertical",
-	slidesPerView: 3,
-	loop: true,
+	slidesPerView: 2,
+	spaceBetween: 30,
 
-	// If we need pagination
-	pagination: {
-		el: ".swiper-pagination",
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-
-	// And if we need scrollbar
 	scrollbar: {
 		el: ".swiper-scrollbar",
 	},
 });
+
+// brand fixed
+window.addEventListener("load", () => {
+	const navBtn1 = document.getElementById("nav-btn-1");
+	const navBtn2 = document.getElementById("nav-btn-2");
+	const navBtn3 = document.getElementById("nav-btn-3");
+	const navBtn4 = document.getElementById("nav-btn-4");
+
+	// Add .active class on buttons when scrolling (highlight it)
+	scroll.on("call", (callValue) => {
+		if (callValue === "lst_pr") {
+			navBtn1.classList.add("active");
+			navBtn2.classList.remove("active");
+			console.log(callValue);
+		} else {
+			navBtn1.classList.remove("active");
+		}
+
+		if (callValue === "old_pr") {
+			navBtn2.classList.add("active");
+			navBtn1.classList.remove("active");
+			navBtn3.classList.remove("active");
+			console.log(callValue);
+		} else {
+			navBtn2.classList.remove("active");
+		}
+
+		if (callValue === "arc_pr") {
+			navBtn3.classList.add("active");
+			navBtn2.classList.remove("active");
+			navBtn4.classList.remove("active");
+			console.log(callValue);
+		} else {
+			navBtn3.classList.remove("active");
+		}
+
+		if (callValue === "plg_pr") {
+			navBtn4.classList.add("active");
+			navBtn3.classList.remove("active");
+			console.log(callValue);
+		} else {
+			navBtn4.classList.remove("active");
+		}
+	});
+});
+
+// Add .active class to the current button on click (highlight it)
+var mmnav = document.getElementById("mm-projects-nav");
+var btns = mmnav.getElementsByClassName("mm-projects-nav-btn");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function () {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
+}

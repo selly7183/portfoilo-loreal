@@ -133,40 +133,6 @@ body.about #wrapper main .section02 .inner img {
   display: flex;
   position: relative;
 }
-body.about #wrapper main .section02 .inner .ovf__box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  white-space: nowrap;
-  transition: all 1s ease;
-  text-transform: uppercase;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-body.about #wrapper main .section02 .inner .ovf__box > div {
-  display: flex;
-  animation: scrollText 100s infinite linear;
-}
-body.about #wrapper main .section02 .inner .ovf__box > div .txt__ovf {
-  font-size: 400px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.1);
-  line-height: 1;
-}
-@keyframes scrollText {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 body.about #wrapper main .section02 .inner .ceo__txt_cont {
   display: flex;
   justify-content: space-between;
@@ -240,6 +206,41 @@ footer .inner .footer__wrapper aside {
   color: var(--color-black);
 }
 
+.ovf__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.ovf__box > div {
+  display: flex;
+  animation: scrollText 100s infinite linear;
+}
+.ovf__box > div .txt__ovf {
+  font-size: 400px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .head-about {
   background-color: var(--color-black);
 }
@@ -307,6 +308,9 @@ footer .inner .footer__wrapper aside {
   padding-bottom: 60%;
 }
 
+body.about #wrapper .brand .section01 .inner {
+  padding-top: 7%;
+}
 body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus {
   font-size: 15px;
 }
@@ -337,8 +341,64 @@ body.about #wrapper .brand .section01 .inner .brand__desc.is-inview .word {
   opacity: 1;
   transform: translateY(0px);
 }
+body.about #wrapper .brand .section01 .inner .ovf__box {
+  margin-top: 15%;
+}
+body.about #wrapper .brand .section02 {
+  padding: 80px;
+  padding-top: 15%;
+}
 body.about #wrapper .brand .section02 .inner {
   border: none;
+  padding: 0;
+}
+body.about #wrapper .brand .section02 .brand__devision {
+  display: flex;
+  z-index: 9;
+  position: relative;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul {
+  position: absolute;
+  top: 0%;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul li {
+  font-weight: var(--weight-semi-bold);
+  cursor: pointer;
+  font-size: var(--font-x-large);
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul li.active a {
+  color: var(--color-white);
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul li a {
+  color: #404040;
+  transition: all 0.3s ease-in-out;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul li a:hover {
+  color: var(--color-white);
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide {
+  width: 70%;
+  margin-left: auto;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont {
+  margin-bottom: 100px;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper {
+  padding-bottom: 100px;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-scrollbar {
+  top: auto;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 2px;
+  width: 100%;
+  left: 0;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: var(--color-white);
 }
 
 @media (max-width: 989px) {
