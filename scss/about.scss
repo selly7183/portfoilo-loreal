@@ -294,6 +294,7 @@ footer {
 // brand
 body.about #wrapper .brand {
 	.section01 {
+		height: 100vh;
 		.inner {
 			padding-top: 7%;
 			.ceo__txt {
@@ -335,7 +336,7 @@ body.about #wrapper .brand {
 	}
 	.section02 {
 		padding: 80px;
-		padding-top: 15%;
+		padding-top: 0;
 		.inner {
 			border: none;
 			padding: 0;
@@ -347,7 +348,7 @@ body.about #wrapper .brand {
 			.brand__devision-title {
 				ul {
 					position: absolute;
-					top: 0%;
+					top: 6%;
 					li {
 						font-weight: var(--weight-semi-bold);
 						cursor: pointer;
@@ -372,8 +373,10 @@ body.about #wrapper .brand {
 				margin-left: auto;
 				.brand__inner {
 					.brand__cont {
-						margin-bottom: 100px;
+						//margin-bottom: 100px;
+						height: 100vh;
 						.swiper {
+							padding-top: 20%;
 							.swiper-wrapper {
 								padding-bottom: 100px;
 								.swiper-slide {

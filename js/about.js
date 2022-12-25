@@ -25,7 +25,8 @@ window.addEventListener("load", (e) => {
 const swiper = new Swiper(".swiper", {
 	slidesPerView: 2,
 	spaceBetween: 30,
-
+	observer: true,
+	observeParents: true,
 	scrollbar: {
 		el: ".swiper-scrollbar",
 	},
@@ -77,12 +78,12 @@ window.addEventListener("load", () => {
 });
 
 // Add .active class to the current button on click (highlight it)
-var mmnav = document.getElementById("mm-projects-nav");
-var btns = mmnav.getElementsByClassName("mm-projects-nav-btn");
-for (var i = 0; i < btns.length; i++) {
+const mmnav = document.getElementById("mm-projects-nav");
+const btns = mmnav.getElementsByClassName("mm-projects-nav-btn");
+for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
+		const current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace("active", "");
 		this.className += " active";
 	});
 }

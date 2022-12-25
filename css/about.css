@@ -308,6 +308,9 @@ footer .inner .footer__wrapper aside {
   padding-bottom: 60%;
 }
 
+body.about #wrapper .brand .section01 {
+  height: 100vh;
+}
 body.about #wrapper .brand .section01 .inner {
   padding-top: 7%;
 }
@@ -346,7 +349,7 @@ body.about #wrapper .brand .section01 .inner .ovf__box {
 }
 body.about #wrapper .brand .section02 {
   padding: 80px;
-  padding-top: 15%;
+  padding-top: 0;
 }
 body.about #wrapper .brand .section02 .inner {
   border: none;
@@ -359,7 +362,7 @@ body.about #wrapper .brand .section02 .brand__devision {
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul {
   position: absolute;
-  top: 0%;
+  top: 6%;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul li {
   font-weight: var(--weight-semi-bold);
@@ -381,7 +384,10 @@ body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide {
   margin-left: auto;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont {
-  margin-bottom: 100px;
+  height: 100vh;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper {
+  padding-top: 20%;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper {
   padding-bottom: 100px;

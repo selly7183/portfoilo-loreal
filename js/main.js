@@ -15,6 +15,7 @@ const scroll = new LocomotiveScroll({
 	scrollFromAnywhere: true,
 	getSpeed: true,
 	getDirection: true,
+	reloadOnContextChange: true,
 	breakpoint: 0,
 	smartphone: {
 		smooth: true,
