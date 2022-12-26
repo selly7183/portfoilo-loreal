@@ -24,11 +24,16 @@ window.addEventListener("load", (e) => {
 // brand slide
 const swiper = new Swiper(".swiper", {
 	slidesPerView: 2,
-	spaceBetween: 30,
+	spaceBetween: 10,
 	observer: true,
 	observeParents: true,
 	scrollbar: {
 		el: ".swiper-scrollbar",
+	},
+	breakpoints: {
+		600: {
+			spaceBetween: 20,
+		},
 	},
 });
 
@@ -88,14 +93,14 @@ for (let i = 0; i < btns.length; i++) {
 	});
 }
 
-let section = document.querySelectorAll(".brand__cont");
-let lists = document.querySelectorAll(".mm-projects-nav-btn");
-function activeLink(li) {
-	lists.forEach((item) => item.classList.remove("active"));
-	li.classList.add("active");
-}
-lists.forEach((item) =>
-	item.addEventListener("click", function () {
-		activeLink(this);
-	})
-);
+// let section = document.querySelectorAll(".brand__cont");
+// let lists = document.querySelectorAll(".mm-projects-nav-btn");
+// function activeLink(li) {
+// 	lists.forEach((item) => item.classList.remove("active"));
+// 	li.classList.add("active");
+// }
+// lists.forEach((item) =>
+// 	item.addEventListener("click", function () {
+// 		activeLink(this);
+// 	})
+// );

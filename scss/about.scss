@@ -374,7 +374,7 @@ body.about #wrapper .brand {
 			}
 			.brand__devision-slide {
 				width: 70%;
-				margin-left: auto;
+				margin-left: 28.3125vw;
 				.brand__inner {
 					padding-top: 55%;
 					.brand__cont {
@@ -416,6 +416,89 @@ body.about #wrapper .brand {
 }
 
 // 반응형
+@media (max-width: 1500px) {
+	body.about #wrapper .brand {
+		.mm-section-heading {
+			font-size: 150px;
+		}
+		.section02 {
+			.brand__devision {
+				.brand__devision-slide {
+					.brand__inner {
+						.brand__cont {
+							height: 70vh;
+							.swiper {
+								.swiper-wrapper {
+									padding-bottom: 70px;
+									.swiper-slide {
+										span {
+											font-size: var(--font-medium);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.mm-projects-nav {
+			grid-gap: 2%;
+			left: 45px;
+			li {
+				a {
+					font-size: var(--font-large);
+				}
+			}
+		}
+		.mm-section-heading {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	body.about #wrapper .brand {
+		.section02 {
+			.brand__devision {
+				.brand__devision-slide {
+					width: 100%;
+					margin-left: 0;
+					.brand__inner {
+						.brand__cont {
+							height: 60vh;
+							.swiper {
+								.vision__tit {
+									a {
+										color: var(--color-white);
+										font-size: 30px;
+										margin-bottom: 14px;
+										display: block;
+									}
+								}
+								.swiper-wrapper {
+									padding-bottom: 40px;
+									.swiper-slide {
+										span {
+											margin-top: 2%;
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.mm-projects-nav {
+			display: none;
+		}
+		.mm-section-heading {
+			left: 0;
+		}
+	}
+}
 @media (max-width: 989px) {
 	body.about {
 		#wrapper {
@@ -478,6 +561,67 @@ body.about #wrapper .brand {
 			width: auto;
 		}
 	}
+
+	// brand 반응형
+	body.about #wrapper .brand {
+		.vis-600-block {
+			display: none;
+		}
+		.section01 {
+			.inner {
+				margin-top: 55px;
+				video {
+					height: calc(100vh - 400px);
+				}
+				.brand__desc {
+					font-size: var(--font-medium);
+				}
+				.ceo__txt {
+					.brand__title {
+						font-size: 23px;
+					}
+					.brand__focus {
+						font-size: var(--font-s-m);
+					}
+				}
+			}
+		}
+		.section02 {
+			.brand__devision {
+				.brand__devision-slide {
+					.brand__inner {
+						padding-top: 50%;
+						.brand__cont {
+							height: auto;
+							margin-bottom: 70px;
+							.swiper {
+								.vision__tit {
+									a {
+										font-size: var(--font-medium);
+										margin-bottom: 10px;
+										display: block;
+									}
+								}
+								.swiper-wrapper {
+									padding-bottom: 20px;
+									.swiper-slide {
+										span {
+											margin-top: 1%;
+											font-size: var(--font-s-m);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.mm-section-heading {
+			font-size: 110px;
+			top: 50px;
+		}
+	}
 }
 @media (max-width: 600px) {
 	body.about {
@@ -530,6 +674,24 @@ body.about #wrapper .brand {
 		.head-about__container-image:nth-of-type(2),
 		.head-about__container-image:nth-of-type(3) {
 			width: 100%;
+		}
+	}
+
+	// brand
+	body.about #wrapper .brand {
+		.section01 {
+			.inner {
+				video {
+					margin-top: 7%;
+				}
+			}
+		}
+		.section02 {
+			padding: 30px;
+		}
+		.mm-section-heading {
+			font-size: 70px;
+			top: 27px;
 		}
 	}
 }
