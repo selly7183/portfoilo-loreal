@@ -264,7 +264,10 @@ footer {
 				.magazine__tab {
 					ul {
 						.magazine__btn {
-							font-size: var(--font-s-m);
+							font-size: var(--font-small);
+							&::after {
+								top: 3px;
+							}
 						}
 					}
 				}
@@ -273,6 +276,19 @@ footer {
 				ul {
 					grid-template-columns: repeat(1, 1fr);
 					gap: 10px;
+					li {
+						a {
+							.magazine__cont-box {
+								.magazine__desc {
+									span {
+										font-size: var(--font-small);
+										padding-bottom: 0;
+										margin-top: 6px;
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -282,7 +298,7 @@ footer {
 	#wrapper {
 		.magazine__detail {
 			.section01 {
-				margin-top: 73px;
+				margin-top: 55px;
 				.inner {
 					.detail__txt {
 						.detail__category {

@@ -268,15 +268,23 @@ footer {
     font-size: var(--font-large);
   }
   .section01 .inner .magazine__categories .magazine__tab ul .magazine__btn {
-    font-size: var(--font-s-m);
+    font-size: var(--font-small);
+  }
+  .section01 .inner .magazine__categories .magazine__tab ul .magazine__btn::after {
+    top: 3px;
   }
   .section01 .inner .magazine__cont ul {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+  .section01 .inner .magazine__cont ul li a .magazine__cont-box .magazine__desc span {
+    font-size: var(--font-small);
+    padding-bottom: 0;
+    margin-top: 6px;
+  }
 
   #wrapper .magazine__detail .section01 {
-    margin-top: 73px;
+    margin-top: 55px;
   }
   #wrapper .magazine__detail .section01 .inner .detail__txt .detail__category {
     padding: 3px 15px;

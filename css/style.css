@@ -184,7 +184,7 @@ br.vis-989 {
 }
 #wrapper header a img {
   width: 100px;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 #wrapper header nav ul {
   gap: 50px;
@@ -733,7 +733,8 @@ footer .inner aside ul li a:hover {
     font-size: var(--font-large);
   }
   #wrapper header a img {
-    width: 85px;
+    width: 80px;
+    margin-top: 5px;
   }
   #wrapper header .header__burger .header__burger-line {
     margin: 6px 0;
@@ -802,6 +803,7 @@ footer .inner aside ul li a:hover {
   }
   #wrapper .section04 .inner h2 {
     font-size: var(--font-large);
+    text-align: center;
   }
   #wrapper .section04 .inner .img__box {
     margin: 35px 0;

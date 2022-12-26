@@ -66,11 +66,11 @@ tabLi.forEach((item, index) => {
 });
 
 // section03 - scrollIntoView
-const commitments = document.querySelector(".link_sec03");
-const section03 = document.querySelector(".section03");
-commitments?.addEventListener("click", (e) => {
-	section03.scrollIntoView({ behavior: "smooth", block: "start" });
-});
+// const commitments = document.querySelector(".link_sec03");
+// const section03 = document.querySelector(".section03");
+// commitments?.addEventListener("click", (e) => {
+// 	section03.scrollIntoView({ behavior: "smooth", block: "start" });
+// });
 
 //section04 - mouse cursor
 document.addEventListener("mousemove", mouseMoveFunc);

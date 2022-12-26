@@ -46,7 +46,7 @@ window.addEventListener("load", () => {
 
 	// Add .active class on buttons when scrolling (highlight it)
 	scroll.on("call", (callValue) => {
-		if (callValue === "lst_pr") {
+		if (callValue === "loreal-luxe") {
 			navBtn1.classList.add("active");
 			navBtn2.classList.remove("active");
 			console.log(callValue);
@@ -54,7 +54,7 @@ window.addEventListener("load", () => {
 			navBtn1.classList.remove("active");
 		}
 
-		if (callValue === "old_pr") {
+		if (callValue === "consumer-product") {
 			navBtn2.classList.add("active");
 			navBtn1.classList.remove("active");
 			navBtn3.classList.remove("active");
@@ -63,7 +63,7 @@ window.addEventListener("load", () => {
 			navBtn2.classList.remove("active");
 		}
 
-		if (callValue === "arc_pr") {
+		if (callValue === "professional") {
 			navBtn3.classList.add("active");
 			navBtn2.classList.remove("active");
 			navBtn4.classList.remove("active");
@@ -72,7 +72,7 @@ window.addEventListener("load", () => {
 			navBtn3.classList.remove("active");
 		}
 
-		if (callValue === "plg_pr") {
+		if (callValue === "active-cosmetics") {
 			navBtn4.classList.add("active");
 			navBtn3.classList.remove("active");
 			console.log(callValue);
@@ -83,8 +83,8 @@ window.addEventListener("load", () => {
 });
 
 // Add .active class to the current button on click (highlight it)
-const mmnav = document.getElementById("mm-projects-nav");
-const btns = mmnav.getElementsByClassName("mm-projects-nav-btn");
+const mmnav = document.getElementById("brand__nav");
+const btns = mmnav.getElementsByClassName("nav__btn");
 for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
 		const current = document.getElementsByClassName("active");
@@ -94,7 +94,7 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 // let section = document.querySelectorAll(".brand__cont");
-// let lists = document.querySelectorAll(".mm-projects-nav-btn");
+// let lists = document.querySelectorAll(".nav__btn");
 // function activeLink(li) {
 // 	lists.forEach((item) => item.classList.remove("active"));
 // 	li.classList.add("active");

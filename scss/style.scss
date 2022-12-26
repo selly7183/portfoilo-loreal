@@ -138,7 +138,7 @@ br.vis-989 {
 		a {
 			img {
 				width: 100px;
-				margin-top: 10px;
+				margin-top: 3px;
 			}
 		}
 		nav {
@@ -749,7 +749,8 @@ footer {
 		header {
 			a {
 				img {
-					width: 85px;
+					width: 80px;
+					margin-top: 5px;
 				}
 			}
 			.header__burger {
@@ -836,6 +837,7 @@ footer {
 				border-bottom: 1px solid var(--color-black);
 				h2 {
 					font-size: var(--font-large);
+					text-align: center;
 				}
 				.img__box {
 					margin: 35px 0;
