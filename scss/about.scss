@@ -683,6 +683,7 @@ body.about #wrapper .brand {
 			.inner {
 				video {
 					margin-top: 7%;
+					height: calc(100vh - 350px);
 				}
 			}
 		}
@@ -692,6 +693,23 @@ body.about #wrapper .brand {
 		.mm-section-heading {
 			font-size: 70px;
 			top: 27px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	body.about #wrapper .brand {
+		.section02 {
+			.brand__devision {
+				.brand__devision-slide {
+					.brand__inner {
+						padding-top: 40%;
+					}
+				}
+			}
+		}
+		.mm-section-heading {
+			font-size: 50px;
 		}
 	}
 }
