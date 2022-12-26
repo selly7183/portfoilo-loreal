@@ -27,7 +27,7 @@
 }
 .links {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: flex-end;
 	.link {
@@ -656,7 +656,12 @@ footer {
 				.commitments__tab {
 					padding: 40px 0 15px 0;
 					ul {
-						gap: 50px;
+						gap: 30px;
+						li {
+							&::after {
+								right: -15px;
+							}
+						}
 					}
 				}
 				#sticky {
@@ -665,15 +670,21 @@ footer {
 						.commitments__cont_box {
 							.txt__box {
 								.commitments__box_left {
-									font-size: var(--font-medium);
+									font-size: 25px;
 								}
 								.view__more {
-									margin-bottom: 20px;
+									margin-bottom: 15px;
 									max-width: 100px;
+									margin-top: 8px;
+									padding: 6px 0;
 								}
 							}
 							flex-direction: column;
 							.commitments__box_right {
+								h3 {
+									font-size: 20px;
+									margin-bottom: 23px;
+								}
 								width: 100%;
 								table {
 									tr {
@@ -782,6 +793,7 @@ footer {
 				}
 				p {
 					font-size: var(--font-s-m);
+					margin-top: 15px;
 				}
 				.commitments__tab {
 					padding: 30px 0 15px 0;
@@ -789,9 +801,10 @@ footer {
 						gap: 0px;
 						li {
 							padding: 7px 6px;
-							margin-right: 20px;
+							margin-right: 14px;
 							.link__text {
 								font-size: 9px;
+								line-height: 1.2;
 							}
 							&::after {
 								right: -10px;
@@ -806,9 +819,10 @@ footer {
 						.commitments__cont_box {
 							.txt__box {
 								.view__more {
-									margin-top: 10px;
-									padding: 6px 0;
+									margin-top: 8px;
+									padding: 3px 0 4px;
 									margin-bottom: 9px;
+									max-width: 80px;
 									.link {
 										.link__cont {
 											.link__text {
@@ -817,7 +831,11 @@ footer {
 										}
 									}
 								}
+								.commitments__box_left {
+									font-size: 20px;
+								}
 							}
+
 							.commitments__box_right {
 								h3 {
 									font-size: 15px;

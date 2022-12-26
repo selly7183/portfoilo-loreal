@@ -65,12 +65,12 @@ tabLi.forEach((item, index) => {
 	});
 });
 
-// section03 - scrollIntoView
-// const commitments = document.querySelector(".link_sec03");
-// const section03 = document.querySelector(".section03");
-// commitments?.addEventListener("click", (e) => {
-// 	section03.scrollIntoView({ behavior: "smooth", block: "start" });
-// });
+// commitment page move
+if (window.location.hash) {
+	var hash = window.location.hash.substring(1);
+	const target = document.getElementById(hash);
+	scroll.scrollTo(target);
+}
 
 //section04 - mouse cursor
 document.addEventListener("mousemove", mouseMoveFunc);

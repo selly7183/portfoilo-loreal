@@ -78,7 +78,7 @@ a {
 
 .links {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
 }
@@ -665,7 +665,10 @@ footer .inner aside ul li a:hover {
     padding: 40px 0 15px 0;
   }
   #wrapper .section03 .inner .commitments__tab ul {
-    gap: 50px;
+    gap: 30px;
+  }
+  #wrapper .section03 .inner .commitments__tab ul li::after {
+    right: -15px;
   }
   #wrapper .section03 .inner #sticky {
     margin-top: 8%;
@@ -674,14 +677,20 @@ footer .inner aside ul li a:hover {
     flex-direction: column;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .commitments__box_left {
-    font-size: var(--font-medium);
+    font-size: 25px;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     max-width: 100px;
+    margin-top: 8px;
+    padding: 6px 0;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right {
     width: 100%;
+  }
+  #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right h3 {
+    font-size: 20px;
+    margin-bottom: 23px;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right table tr th {
     font-size: var(--font-s-m);
@@ -762,6 +771,7 @@ footer .inner aside ul li a:hover {
   }
   #wrapper .section03 .inner p {
     font-size: var(--font-s-m);
+    margin-top: 15px;
   }
   #wrapper .section03 .inner .commitments__tab {
     padding: 30px 0 15px 0;
@@ -771,10 +781,11 @@ footer .inner aside ul li a:hover {
   }
   #wrapper .section03 .inner .commitments__tab ul li {
     padding: 7px 6px;
-    margin-right: 20px;
+    margin-right: 14px;
   }
   #wrapper .section03 .inner .commitments__tab ul li .link__text {
     font-size: 9px;
+    line-height: 1.2;
   }
   #wrapper .section03 .inner .commitments__tab ul li::after {
     right: -10px;
@@ -782,12 +793,16 @@ footer .inner aside ul li a:hover {
     height: 65%;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more {
-    margin-top: 10px;
-    padding: 6px 0;
+    margin-top: 8px;
+    padding: 3px 0 4px;
     margin-bottom: 9px;
+    max-width: 80px;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more .link .link__cont .link__text {
     font-size: 9px;
+  }
+  #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .commitments__box_left {
+    font-size: 20px;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .commitments__box_right h3 {
     font-size: 15px;
