@@ -87,3 +87,15 @@ for (let i = 0; i < btns.length; i++) {
 		this.className += " active";
 	});
 }
+
+let section = document.querySelectorAll(".brand__cont");
+let lists = document.querySelectorAll(".mm-projects-nav-btn");
+function activeLink(li) {
+	lists.forEach((item) => item.classList.remove("active"));
+	li.classList.add("active");
+}
+lists.forEach((item) =>
+	item.addEventListener("click", function () {
+		activeLink(this);
+	})
+);

@@ -217,7 +217,7 @@ footer .inner .footer__wrapper aside {
   text-transform: uppercase;
   overflow: hidden;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -311,8 +311,8 @@ footer .inner .footer__wrapper aside {
 body.about #wrapper .brand .section01 {
   height: 100vh;
 }
-body.about #wrapper .brand .section01 .inner {
-  padding-top: 7%;
+body.about #wrapper .brand .section01 .inner video {
+  margin-top: 3%;
 }
 body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus {
   font-size: 15px;
@@ -330,7 +330,7 @@ body.about #wrapper .brand .section01 .inner .ceo__txt .brand__title .word {
 body.about #wrapper .brand .section01 .inner .brand__desc {
   visibility: hidden;
   font-family: "Crimson Text", serif;
-  font-size: 23px;
+  font-size: 25px;
 }
 body.about #wrapper .brand .section01 .inner .brand__desc .word {
   display: inline-block;
@@ -345,7 +345,7 @@ body.about #wrapper .brand .section01 .inner .brand__desc.is-inview .word {
   transform: translateY(0px);
 }
 body.about #wrapper .brand .section01 .inner .ovf__box {
-  margin-top: 15%;
+  margin-top: 18%;
 }
 body.about #wrapper .brand .section02 {
   padding: 80px;
@@ -357,7 +357,6 @@ body.about #wrapper .brand .section02 .inner {
   padding: 0;
 }
 body.about #wrapper .brand .section02 .brand__devision {
-  display: flex;
   z-index: 9;
   position: relative;
 }
@@ -384,11 +383,11 @@ body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide {
   width: 70%;
   margin-left: auto;
 }
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner {
+  padding-top: 55%;
+}
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont {
   height: 100vh;
-}
-body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper {
-  padding-top: 20%;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper {
   padding-bottom: 100px;
@@ -503,6 +502,85 @@ body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .b
 .has-scroll-smooth .head-about__container-image:nth-of-type(3) {
     width: 100%;
   }
+}
+.mm-section-heading {
+  position: absolute;
+  font-size: 200px;
+  text-transform: uppercase;
+  left: 15.4375vw;
+  top: 15rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out 0.4, letter-spacing 0.3s ease-out 0.4s;
+  pointer-events: none;
+  will-change: opacity, top, letter-spacing;
+}
+
+.is-inview .mm-section-heading {
+  top: 6.5rem;
+  opacity: 1;
+  letter-spacing: 0.1px;
+  transition: opacity 0.5s ease-out 0.25s, top 0.5s ease-out 0.25s;
+}
+
+.is-inview .is-inview.mm-section-heading {
+  opacity: 0.185;
+}
+
+.mm-projects-nav {
+  position: absolute;
+  z-index: 80;
+  top: 5%;
+  display: grid;
+  grid-gap: 7%;
+}
+
+.mm-projects-nav li {
+  opacity: 0;
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  -webkit-transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  -moz-transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  -ms-transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  -o-transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  will-change: opacity, transform;
+  font-weight: var(--weight-semi-bold);
+  font-size: var(--font-x-large);
+}
+
+.mm-projects-nav.is-inview li {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  opacity: 1;
+}
+
+.mm-projects-nav li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.mm-projects-nav li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.mm-projects-nav li:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.mm-projects-nav li.active a,
+.mm-projects-nav li a:hover {
+  opacity: 1;
+}
+
+.mm-projects-nav-btn a {
+  text-decoration: none;
+  opacity: 0.6;
+  color: #fff;
 }
 
 /*# sourceMappingURL=about.css.map */
