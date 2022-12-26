@@ -350,6 +350,7 @@ body.about #wrapper .brand .section01 .inner .ovf__box {
 body.about #wrapper .brand .section02 {
   padding: 80px;
   padding-top: 0;
+  margin-top: -10%;
 }
 body.about #wrapper .brand .section02 .inner {
   border: none;
@@ -362,7 +363,7 @@ body.about #wrapper .brand .section02 .brand__devision {
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul {
   position: absolute;
-  top: 6%;
+  top: 5%;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-title ul li {
   font-weight: var(--weight-semi-bold);
@@ -394,6 +395,12 @@ body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .b
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
+}
+body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper .swiper-slide span {
+  font-size: 30px;
+  margin-top: 3%;
+  display: block;
+  text-align: center;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-scrollbar {
   top: auto;
