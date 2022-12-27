@@ -53,7 +53,7 @@ a {
 }
 body.contact .section01 {
   background: var(--color-white);
-  padding-bottom: 80px;
+  height: 100vh;
 }
 body.contact .section01 .inner {
   padding: 25px 80px 80px 80px;
@@ -133,31 +133,11 @@ body.contact .section01 .inner .contact__wrap .contact__form form fieldset table
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th label {
   font-family: "Crimson Text", serif;
 }
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.submit {
-  width: 50%;
-  margin-top: 50px;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.submit input {
-  width: 100%;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: none;
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 10px 0;
-  transition: 0.5s cubic-bezier(0.38, 0.005, 0.215, 1);
-  cursor: pointer;
-}
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.message {
   top: 16px;
 }
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.message.on {
   top: 100%;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th:hover input {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-black);
-  color: var(--color-black);
 }
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=text],
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=password],
@@ -165,8 +145,9 @@ body.contact .section01 .inner .contact__wrap .contact__form form fieldset table
   width: 100%;
   border: none;
   border-bottom: 1px solid #aaa;
-  padding: 5px 0 10px 0;
+  padding: 10px 0;
   cursor: pointer;
+  outline: none;
 }
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=checkbox],
 body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=radio] {
@@ -189,6 +170,23 @@ body.contact .section01 .inner .contact__wrap .contact__form form fieldset table
   position: absolute;
   color: #f8461e;
   font-size: 10px;
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .submit__btn {
+  margin-top: 50px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 0;
+  transition: 0.5s cubic-bezier(0.38, 0.005, 0.215, 1);
+  width: 100%;
+  cursor: pointer;
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .submit__btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
 }
 body.contact footer {
   background: var(--color-white);
@@ -220,24 +218,25 @@ body.contact footer .inner .contact__wrap .contact__info li p:nth-child(2) {
   font-size: 80px;
   font-family: "Crimson Text", serif;
 }
-.result .section01 .box button {
+.result .section01 .box .result__btn {
   outline: none;
   padding: 0;
   width: 50%;
+  margin: auto;
   border: 1px solid var(--color-black);
   border-radius: 30px;
   background-color: var(--color-white);
   margin-top: 50px;
   transition: 0.5s cubic-bezier(0.38, 0.005, 0.215, 1);
 }
-.result .section01 .box button a {
+.result .section01 .box .result__btn a {
   padding: 10px 20px;
   display: block;
 }
-.result .section01 .box button:hover {
+.result .section01 .box .result__btn:hover {
   background-color: var(--color-black);
 }
-.result .section01 .box button:hover a {
+.result .section01 .box .result__btn:hover a {
   color: var(--color-white);
 }
 
@@ -276,8 +275,9 @@ body.contact footer .inner .contact__wrap .contact__info li p:nth-child(2) {
   body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th {
     font-size: var(--font-s-m);
   }
-  body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.submit {
-    width: 100%;
+  body.contact .section01 .inner .contact__wrap .contact__form form .submit__btn {
+    margin-top: 30px;
+    padding: 7px 0;
   }
 
   .result .section01 .inner {
@@ -291,6 +291,13 @@ body.contact footer .inner .contact__wrap .contact__info li p:nth-child(2) {
   }
   .result .section01 .inner .box p {
     font-size: var(--font-s-m);
+  }
+  .result .section01 .inner .box .result__btn {
+    margin-top: 25px;
+  }
+  .result .section01 .inner .box .result__btn a {
+    font-size: var(--font-s-m);
+    padding: 5px 20px;
   }
 }
 @media (max-width: 600px) {

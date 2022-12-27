@@ -25,7 +25,7 @@ td.forEach((item, index) => {
 });
 
 const form = document.querySelector("#member");
-const btnSubmit = form.querySelector("input[type=submit]");
+const btnSubmit = form.querySelector(".submit__btn");
 btnSubmit.addEventListener("click", (e) => {
 	if (!isTxt("userNmae", 5)) e.preventDefault();
 	if (!isEmail("email", 10)) e.preventDefault();

@@ -6,7 +6,7 @@
 body.contact {
 	.section01 {
 		background: var(--color-white);
-		padding-bottom: 80px;
+		height: 100vh;
 		.inner {
 			padding: 25px 80px 80px 80px;
 			.contact__us {
@@ -81,33 +81,11 @@ body.contact {
 										label {
 											font-family: "Crimson Text", serif;
 										}
-										&.submit {
-											width: 50%;
-											margin-top: 50px;
 
-											input {
-												width: 100%;
-												background-color: var(--color-black);
-												color: var(--color-white);
-												border: none;
-												border: 1px solid transparent;
-												border-radius: 30px;
-												padding: 10px 0;
-												transition: 0.5s cubic-bezier(0.38, 0.005, 0.215, 1);
-												cursor: pointer;
-											}
-										}
 										&.message {
 											top: 16px;
 											&.on {
 												top: 100%;
-											}
-										}
-										&:hover {
-											input {
-												background-color: var(--color-white);
-												border: 1px solid var(--color-black);
-												color: var(--color-black);
 											}
 										}
 									}
@@ -119,8 +97,9 @@ body.contact {
 											width: 100%;
 											border: none;
 											border-bottom: 1px solid #aaa;
-											padding: 5px 0 10px 0;
+											padding: 10px 0;
 											cursor: pointer;
+											outline: none;
 										}
 										input[type="checkbox"],
 										input[type="radio"] {
@@ -146,6 +125,23 @@ body.contact {
 										font-size: 10px;
 									}
 								}
+							}
+						}
+						.submit__btn {
+							margin-top: 50px;
+							background-color: var(--color-black);
+							color: var(--color-white);
+							border: none;
+							border: 1px solid transparent;
+							border-radius: 30px;
+							padding: 10px 0;
+							transition: 0.5s cubic-bezier(0.38, 0.005, 0.215, 1);
+							width: 100%;
+							cursor: pointer;
+							&:hover {
+								background-color: var(--color-white);
+								color: var(--color-black);
+								border: 1px solid var(--color-black);
 							}
 						}
 					}
@@ -192,10 +188,11 @@ body.contact {
 				font-size: 80px;
 				font-family: "Crimson Text", serif;
 			}
-			button {
+			.result__btn {
 				outline: none;
 				padding: 0;
 				width: 50%;
+				margin: auto;
 				border: 1px solid var(--color-black);
 				border-radius: 30px;
 				background-color: var(--color-white);
@@ -254,12 +251,13 @@ body.contact {
 									tr {
 										th {
 											font-size: var(--font-s-m);
-											&.submit {
-												width: 100%;
-											}
 										}
 									}
 								}
+							}
+							.submit__btn {
+								margin-top: 30px;
+								padding: 7px 0;
 							}
 						}
 					}
@@ -267,6 +265,8 @@ body.contact {
 			}
 		}
 	}
+
+	// result
 	.result {
 		.section01 {
 			.inner {
@@ -278,6 +278,13 @@ body.contact {
 					}
 					p {
 						font-size: var(--font-s-m);
+					}
+					.result__btn {
+						margin-top: 25px;
+						a {
+							font-size: var(--font-s-m);
+							padding: 5px 20px;
+						}
 					}
 				}
 			}
@@ -296,6 +303,8 @@ body.contact {
 			}
 		}
 	}
+
+	// result
 	#wrapper {
 		.result {
 			.section01 {

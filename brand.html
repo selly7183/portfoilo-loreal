@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/locomotive-scroll.css" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
-		<script defer type="module" src="js/common.js"></script>
+		<script type="module" src="js/common.js"></script>
 		<script defer src="js/main.js"></script>
 		<script defer src="js/about.js"></script>
 		<script src="js/gsap.min.js"></script>
@@ -36,15 +36,15 @@
 					<div class="inner">
 						<div>
 							<h1 class="ceo__txt" data-words>
-								<p class="brand__focus">
+								<span class="brand__focus">
 									<span class="word" style="--word-index: 2" data-word="Focus"
 										>Focus
 									</span>
 									<span class="word" style="--word-index: 3" data-word="On">
 										On
 									</span>
-								</p>
-								<p class="brand__title">
+								</span>
+								<span class="brand__title">
 									<span class="word" style="--word-index: 4" data-word="Our"
 										>Our
 									</span>
@@ -58,7 +58,7 @@
 									>
 										Divisions
 									</span>
-								</p>
+								</span>
 							</h1>
 							<p class="brand__desc">
 								<span
@@ -236,13 +236,7 @@
 								</span>
 							</p>
 						</div>
-						<video
-							src="src/video/brand-video.mp4"
-							autoplay
-							loop
-							muted
-							alt="brand-video"
-						></video>
+						<video src="src/video/brand-video.mp4" autoplay loop muted></video>
 					</div>
 
 					<div class="ovf__box">
@@ -441,7 +435,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="spacer" data-scroll-section></section>
+				<div class="spacer" data-scroll-section></div>
 			</main>
 
 			<!-- footer -->

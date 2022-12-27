@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/contact.css" />
 		<link rel="stylesheet" href="css/locomotive-scroll.css" />
-		<script defer type="module" src="js/common.js"></script>
+		<script type="module" src="js/common.js"></script>
 		<script defer src="js/main.js"></script>
 		<script defer src="js/contact.js"></script>
 		<script src="js/gsap.min.js"></script>
@@ -64,17 +64,18 @@
 								<h3>Contact us for a quote, help or to join the team.</h3>
 								<form action="result.html" method="get" id="member">
 									<fieldset>
-										<legend class="h">회원가입 폼 입력 항목</legend>
-										<table width="600">
+										<legend class="h">Contact us for a quote</legend>
+										<table>
 											<caption class="h">
-												회원가입을 위한 아이디, 이메일, 목적, 남기는말, 입력 폼
-												양식
+												form to name, email, subject, message, commitments
 											</caption>
 											<tbody>
 												<!-- user id -->
 												<tr>
-													<th><label for="userNmae">Name</label></th>
-													<td scope="row">
+													<th scope="row">
+														<label for="userNmae">Name</label>
+													</th>
+													<td>
 														<input type="text" id="userNmae" name="userNmae" />
 													</td>
 												</tr>
@@ -95,7 +96,7 @@
 													</th>
 													<td>
 														<select name="subject" id="subject">
-															<option value=""></option>
+															<option value selected="selected"></option>
 															<option value="Product/Features">
 																Product/Features
 															</option>
@@ -126,22 +127,17 @@
 														></textarea>
 													</td>
 												</tr>
-												<!-- btn set -->
-												<tr>
-													<th class="submit">
-														<input type="submit" value="submit" />
-													</th>
-												</tr>
 											</tbody>
 										</table>
 									</fieldset>
+									<button class="submit__btn" type="submit">Submit</button>
 								</form>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="spacer" data-scroll-section></section>
+				<div class="spacer" data-scroll-section></div>
 			</main>
 
 			<!-- footer -->

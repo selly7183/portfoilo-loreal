@@ -53,7 +53,7 @@ body.about {
 						text-align: center;
 						text-transform: uppercase;
 						visibility: hidden;
-						p {
+						.txt {
 							display: flex;
 							justify-content: space-between;
 							font-size: var(--font-small);
@@ -296,13 +296,13 @@ body.about #wrapper .brand {
 	.section01 {
 		height: 100vh;
 		.inner {
-			// padding-top: 7%;
 			video {
 				margin-top: 3%;
 			}
 			.ceo__txt {
 				.brand__focus {
 					font-size: 15px;
+					display: block;
 					.word {
 						display: inline-block;
 					}
@@ -310,6 +310,7 @@ body.about #wrapper .brand {
 				.brand__title {
 					font-size: var(--font-large);
 					margin-bottom: 20px;
+					display: block;
 					.word {
 						display: inline-block;
 					}
@@ -346,7 +347,6 @@ body.about #wrapper .brand {
 			padding: 0;
 		}
 		.brand__devision {
-			// display: flex;
 			z-index: 9;
 			position: relative;
 			.brand__devision-title {
@@ -587,7 +587,7 @@ body.about #wrapper .brand {
 						h3.ceo__txt {
 							font-size: 2.7rem;
 							line-height: 1.1;
-							p {
+							.txt {
 								padding: 50px 0 30px 0;
 							}
 						}
@@ -708,7 +708,7 @@ body.about #wrapper .brand {
 						padding: 30px;
 						h3.ceo__txt {
 							font-size: 1.7rem;
-							p {
+							.txt {
 								padding: 60px 0 30px 0;
 							}
 						}

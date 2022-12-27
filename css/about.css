@@ -95,7 +95,7 @@ body.about #wrapper main .section01 .inner h3.ceo__txt {
   text-transform: uppercase;
   visibility: hidden;
 }
-body.about #wrapper main .section01 .inner h3.ceo__txt p {
+body.about #wrapper main .section01 .inner h3.ceo__txt .txt {
   display: flex;
   justify-content: space-between;
   font-size: var(--font-small);
@@ -316,6 +316,7 @@ body.about #wrapper .brand .section01 .inner video {
 }
 body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus {
   font-size: 15px;
+  display: block;
 }
 body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus .word {
   display: inline-block;
@@ -323,6 +324,7 @@ body.about #wrapper .brand .section01 .inner .ceo__txt .brand__focus .word {
 body.about #wrapper .brand .section01 .inner .ceo__txt .brand__title {
   font-size: var(--font-large);
   margin-bottom: 20px;
+  display: block;
 }
 body.about #wrapper .brand .section01 .inner .ceo__txt .brand__title .word {
   display: inline-block;
@@ -553,7 +555,7 @@ body.about #wrapper .brand .nav__btn a {
     font-size: 2.7rem;
     line-height: 1.1;
   }
-  body.about #wrapper main .section01 .inner h3.ceo__txt p {
+  body.about #wrapper main .section01 .inner h3.ceo__txt .txt {
     padding: 50px 0 30px 0;
   }
   body.about #wrapper main .section02 .inner {
@@ -642,7 +644,7 @@ body.about #wrapper .brand .nav__btn a {
   body.about #wrapper main .section01 .inner h3.ceo__txt {
     font-size: 1.7rem;
   }
-  body.about #wrapper main .section01 .inner h3.ceo__txt p {
+  body.about #wrapper main .section01 .inner h3.ceo__txt .txt {
     padding: 60px 0 30px 0;
   }
   body.about #wrapper main .section02 {
