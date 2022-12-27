@@ -295,6 +295,7 @@ footer {
   }
   #wrapper .magazine__detail .section01 .inner .detail__desc p {
     padding: 7px 0;
+    text-align: left;
   }
 }
 
