@@ -61,7 +61,7 @@ a {
   width: 100%;
   z-index: 11111;
   -webkit-transition: 0.5s ease;
-  transition: 0.5s ease 1.5s;
+  transition: 0.5s ease 1.3s;
   background-color: var(--color-black);
 }
 .preloader.preloader--hide {
@@ -794,9 +794,9 @@ footer .inner aside ul li a:hover {
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more {
     margin-top: 8px;
-    padding: 3px 0 4px;
+    padding: 8px 0;
     margin-bottom: 9px;
-    max-width: 80px;
+    max-width: 95px;
   }
   #wrapper .section03 .inner #sticky .commitments__cont .commitments__cont_box .txt__box .view__more .link .link__cont .link__text {
     font-size: 9px;
@@ -852,6 +852,15 @@ footer .inner aside ul li a:hover {
     display: block;
     line-height: 1;
     text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  #wrapper .section03 .inner .commitments__tab ul li {
+    padding: 3px 10px;
+  }
+  #wrapper .section03 .inner .commitments__tab ul li::after {
+    right: -9px;
+    top: 5px;
   }
 }
 

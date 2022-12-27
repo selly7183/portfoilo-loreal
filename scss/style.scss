@@ -11,7 +11,7 @@
 	width: 100%;
 	z-index: 11111;
 	-webkit-transition: 0.5s ease;
-	transition: 0.5s ease 1.5s;
+	transition: 0.5s ease 1.3s;
 	background-color: var(--color-black);
 	&.preloader--hide {
 		height: 0;
@@ -820,9 +820,9 @@ footer {
 							.txt__box {
 								.view__more {
 									margin-top: 8px;
-									padding: 3px 0 4px;
+									padding: 8px 0;
 									margin-bottom: 9px;
-									max-width: 80px;
+									max-width: 95px;
 									.link {
 										.link__cont {
 											.link__text {
@@ -890,6 +890,22 @@ footer {
 						display: block;
 						line-height: 1;
 						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	#wrapper {
+		.section03 {
+			.inner {
+				.commitments__tab ul li {
+					padding: 3px 10px;
+					&::after {
+						right: -9px;
+						top: 5px;
 					}
 				}
 			}
