@@ -618,7 +618,6 @@ body.about #wrapper .brand .nav__btn a {
   }
   body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont {
     height: auto;
-    margin-bottom: 70px;
   }
   body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .vision__tit a {
     font-size: var(--font-medium);

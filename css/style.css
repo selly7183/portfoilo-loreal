@@ -736,10 +736,16 @@ footer .inner aside ul li a:hover {
   }
 
   #wrapper .menu .menu__container .menu__links {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   #wrapper .menu .menu__container .menu__links .menu__link {
     font-size: var(--font-large);
+  }
+  #wrapper .menu .menu__container .menu__link-join {
+    margin-top: 11%;
+  }
+  #wrapper .menu .menu__container .menu__link-join a {
+    padding: 8px 50px;
   }
   #wrapper header a img {
     width: 80px;

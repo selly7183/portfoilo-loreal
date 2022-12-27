@@ -46,89 +46,52 @@ body.contact {
 					width: 50%;
 					h3 {
 						font-size: var(--font-medium);
-						margin-bottom: 20px;
+						margin-bottom: 35px;
 					}
 					form {
-						fieldset {
-							border: none;
-							.h {
-								display: none;
+						.form__row {
+							position: relative;
+							margin-bottom: 40px;
+
+							label {
+								font-family: "Crimson Text", serif;
+								cursor: pointer;
+								position: absolute;
+								top: 7px;
+								font-weight: var(--weight-bold);
+								transition: 0.55s cubic-bezier(0.9, 0, 0.1, 1);
+								&.on {
+									top: 100%;
+									opacity: 0.4;
+									font-size: var(--font-small);
+								}
 							}
-							table {
+							input,
+							select,
+							textarea {
 								border: none;
+								outline: none;
+								border-bottom: 1px solid #aaa;
 								width: 100%;
-								tr {
-									text-align: left;
-									position: relative;
-
-									td {
-										border: none;
-										padding: 10px 0 20px 0;
-									}
-									th {
-										position: absolute;
-										top: 50%;
-										left: 0;
-										transform: translateY(-50%);
-										transition: 0.55s cubic-bezier(0.9, 0, 0.1, 1);
-										padding-left: 3px;
-										&.on {
-											top: 100%;
-											font-size: var(--font-small);
-											opacity: 0.3;
-										}
-
-										label {
-											font-family: "Crimson Text", serif;
-										}
-
-										&.message {
-											top: 16px;
-											&.on {
-												top: 100%;
-											}
-										}
-									}
-
-									td {
-										input[type="text"],
-										input[type="password"],
-										select {
-											width: 100%;
-											border: none;
-											border-bottom: 1px solid #aaa;
-											padding: 10px 0;
-											cursor: pointer;
-											outline: none;
-										}
-										input[type="checkbox"],
-										input[type="radio"] {
-											margin-right: 30px;
-										}
-										textarea {
-											width: 100%;
-											height: 150px;
-											border: none;
-											padding: 1px;
-											border-bottom: 1px solid #aaa;
-											resize: none;
-											cursor: pointer;
-										}
-										textarea:focus,
-										input:focus {
-											outline: 0;
-										}
-									}
-									p {
-										position: absolute;
-										color: #f8461e;
-										font-size: 10px;
-									}
+								cursor: pointer;
+								padding: 10px 0 5px 0;
+							}
+							textarea {
+								resize: none;
+							}
+							p {
+								color: #f8461e;
+								font-size: 10px;
+								margin-top: 2px;
+							}
+							&.message {
+								.on {
+									top: 102%;
 								}
 							}
 						}
 						.submit__btn {
-							margin-top: 50px;
+							margin-top: 20px;
 							background-color: var(--color-black);
 							color: var(--color-white);
 							border: none;
@@ -243,20 +206,19 @@ body.contact {
 						width: 100%;
 						margin-top: 28px;
 						h3 {
-							margin-bottom: 0;
+							margin-bottom: 15px;
 						}
 						form {
-							fieldset {
-								table {
-									tr {
-										th {
-											font-size: var(--font-s-m);
-										}
+							.form__row {
+								label {
+									font-size: var(--font-s-m);
+									&.on {
+										top: 110%;
 									}
 								}
 							}
 							.submit__btn {
-								margin-top: 30px;
+								margin-top: 5px;
 								padding: 7px 0;
 							}
 						}

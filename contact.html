@@ -61,75 +61,51 @@
 								</li>
 							</ul>
 							<div class="contact__form">
-								<h3>Contact us for a quote, help or to join the team.</h3>
+								<h3>* Contact us for a quote, help or to join the team.</h3>
 								<form action="result.html" method="get" id="member">
-									<fieldset>
-										<legend class="h">Contact us for a quote</legend>
-										<table>
-											<caption class="h">
-												form to name, email, subject, message, commitments
-											</caption>
-											<tbody>
-												<!-- user id -->
-												<tr>
-													<th scope="row">
-														<label for="userNmae">Name</label>
-													</th>
-													<td>
-														<input type="text" id="userNmae" name="userNmae" />
-													</td>
-												</tr>
-
-												<!-- email -->
-												<tr>
-													<th scope="row">
-														<label for="email">Email</label>
-													</th>
-													<td>
-														<input type="text" name="email" id="email" />
-													</td>
-												</tr>
-												<!-- subject -->
-												<tr>
-													<th scope="row">
-														<label for="subject">Message Subject</label>
-													</th>
-													<td>
-														<select name="subject" id="subject">
-															<option value selected="selected"></option>
-															<option value="Product/Features">
-																Product/Features
-															</option>
-															<option value="Pertnerships/Marketing/Business">
-																Pertnerships/Marketing/Business
-															</option>
-															<option value="Operations/Riders/Vendors">
-																Operations/Riders/Vendors
-															</option>
-															<option value="General Enquiries">
-																General Enquiries
-															</option>
-														</select>
-													</td>
-												</tr>
-
-												<!-- comments -->
-												<tr>
-													<th scope="row" class="message">
-														<label for="comments">Message</label>
-													</th>
-													<td>
-														<textarea
-															name="comments"
-															id="comments"
-															cols="30"
-															rows="10"
-														></textarea>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</fieldset>
+									<div class="form__row">
+										<label for="name">Name</label>
+										<div class="detail">
+											<input type="text" name="userNmae" />
+										</div>
+									</div>
+									<div class="form__row">
+										<label for="email">Email</label>
+										<div class="detail">
+											<input type="text" name="email" />
+										</div>
+									</div>
+									<div class="form__row">
+										<label for="subject">Message Subject</label>
+										<div class="detail">
+											<select name="subject" id="subject">
+												<option value selected="selected"></option>
+												<option value="Product/Features">
+													Product/Features
+												</option>
+												<option value="Pertnerships/Marketing/Business">
+													Pertnerships/Marketing/Business
+												</option>
+												<option value="Operations/Riders/Vendors">
+													Operations/Riders/Vendors
+												</option>
+												<option value="General Enquiries">
+													General Enquiries
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__row message">
+										<label for="comments">Message</label>
+										<div class="detail">
+											<textarea
+												name="comments"
+												id="comments"
+												cols="30"
+												rows="10"
+											></textarea>
+										</div>
+									</div>
 									<button class="submit__btn" type="submit">Submit</button>
 								</form>
 							</div>

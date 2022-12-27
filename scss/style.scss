@@ -750,9 +750,15 @@ footer {
 		.menu {
 			.menu__container {
 				.menu__links {
-					margin-bottom: 30px;
+					margin-bottom: 0px;
 					.menu__link {
 						font-size: var(--font-large);
+					}
+				}
+				.menu__link-join {
+					margin-top: 11%;
+					a {
+						padding: 8px 50px;
 					}
 				}
 			}

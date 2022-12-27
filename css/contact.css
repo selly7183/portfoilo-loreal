@@ -97,82 +97,48 @@ body.contact .section01 .inner .contact__wrap .contact__form {
 }
 body.contact .section01 .inner .contact__wrap .contact__form h3 {
   font-size: var(--font-medium);
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset {
-  border: none;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset .h {
-  display: none;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table {
-  border: none;
-  width: 100%;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr {
-  text-align: left;
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row {
   position: relative;
+  margin-bottom: 40px;
 }
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td {
-  border: none;
-  padding: 10px 0 20px 0;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  transition: 0.55s cubic-bezier(0.9, 0, 0.1, 1);
-  padding-left: 3px;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.on {
-  top: 100%;
-  font-size: var(--font-small);
-  opacity: 0.3;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th label {
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row label {
   font-family: "Crimson Text", serif;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.message {
-  top: 16px;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th.message.on {
-  top: 100%;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=text],
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=password],
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td select {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #aaa;
-  padding: 10px 0;
   cursor: pointer;
-  outline: none;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=checkbox],
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input[type=radio] {
-  margin-right: 30px;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td textarea {
-  width: 100%;
-  height: 150px;
-  border: none;
-  padding: 1px;
-  border-bottom: 1px solid #aaa;
-  resize: none;
-  cursor: pointer;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td textarea:focus,
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr td input:focus {
-  outline: 0;
-}
-body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr p {
   position: absolute;
+  top: 7px;
+  font-weight: var(--weight-bold);
+  transition: 0.55s cubic-bezier(0.9, 0, 0.1, 1);
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row label.on {
+  top: 100%;
+  opacity: 0.4;
+  font-size: var(--font-small);
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row input,
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row select,
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0 5px 0;
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row textarea {
+  resize: none;
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row p {
   color: #f8461e;
   font-size: 10px;
+  margin-top: 2px;
+}
+body.contact .section01 .inner .contact__wrap .contact__form form .form__row.message .on {
+  top: 102%;
 }
 body.contact .section01 .inner .contact__wrap .contact__form form .submit__btn {
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: var(--color-black);
   color: var(--color-white);
   border: none;
@@ -270,13 +236,16 @@ body.contact footer .inner .contact__wrap .contact__info li p:nth-child(2) {
     margin-top: 28px;
   }
   body.contact .section01 .inner .contact__wrap .contact__form h3 {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
-  body.contact .section01 .inner .contact__wrap .contact__form form fieldset table tr th {
+  body.contact .section01 .inner .contact__wrap .contact__form form .form__row label {
     font-size: var(--font-s-m);
   }
+  body.contact .section01 .inner .contact__wrap .contact__form form .form__row label.on {
+    top: 110%;
+  }
   body.contact .section01 .inner .contact__wrap .contact__form form .submit__btn {
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 7px 0;
   }
 
