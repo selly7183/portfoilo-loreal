@@ -378,10 +378,9 @@ body.about #wrapper .brand {
 				.brand__inner {
 					padding-top: 55%;
 					.brand__cont {
-						//margin-top: -20%;
+						padding-top: 15%;
 						height: 100vh;
 						.swiper {
-							// padding-top: 20%;
 							.swiper-wrapper {
 								padding-bottom: 100px;
 								.swiper-slide {
@@ -709,6 +708,9 @@ body.about #wrapper .brand {
 						padding: 30px;
 						h3.ceo__txt {
 							font-size: 1.7rem;
+							p {
+								padding: 60px 0 30px 0;
+							}
 						}
 					}
 				}
@@ -718,7 +720,7 @@ body.about #wrapper .brand {
 					.inner {
 						padding: 20px;
 						h1 {
-							font-size: 25px;
+							font-size: 23px;
 							font-weight: 100;
 							line-height: 1;
 						}
@@ -733,9 +735,6 @@ body.about #wrapper .brand {
 						}
 					}
 				}
-				// .spacer {
-				// 	height: 250px !important;
-				// }
 			}
 		}
 	}

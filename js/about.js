@@ -39,10 +39,10 @@ const swiper = new Swiper(".swiper", {
 
 // brand fixed
 window.addEventListener("load", () => {
-	const navBtn1 = document.getElementById("nav-btn-1");
-	const navBtn2 = document.getElementById("nav-btn-2");
-	const navBtn3 = document.getElementById("nav-btn-3");
-	const navBtn4 = document.getElementById("nav-btn-4");
+	const navBtn1 = document.querySelector("#nav-btn-1");
+	const navBtn2 = document.querySelector("#nav-btn-2");
+	const navBtn3 = document.querySelector("#nav-btn-3");
+	const navBtn4 = document.querySelector("#nav-btn-4");
 
 	// Add .active class on buttons when scrolling (highlight it)
 	scroll.on("call", (callValue) => {
@@ -92,15 +92,3 @@ for (let i = 0; i < btns.length; i++) {
 		this.className += " active";
 	});
 }
-
-// let section = document.querySelectorAll(".brand__cont");
-// let lists = document.querySelectorAll(".nav__btn");
-// function activeLink(li) {
-// 	lists.forEach((item) => item.classList.remove("active"));
-// 	li.classList.add("active");
-// }
-// lists.forEach((item) =>
-// 	item.addEventListener("click", function () {
-// 		activeLink(this);
-// 	})
-// );

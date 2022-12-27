@@ -387,6 +387,7 @@ body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .b
   padding-top: 55%;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont {
+  padding-top: 15%;
   height: 100vh;
 }
 body.about #wrapper .brand .section02 .brand__devision .brand__devision-slide .brand__inner .brand__cont .swiper .swiper-wrapper {
@@ -641,6 +642,9 @@ body.about #wrapper .brand .nav__btn a {
   body.about #wrapper main .section01 .inner h3.ceo__txt {
     font-size: 1.7rem;
   }
+  body.about #wrapper main .section01 .inner h3.ceo__txt p {
+    padding: 60px 0 30px 0;
+  }
   body.about #wrapper main .section02 {
     padding: 30px;
   }
@@ -648,7 +652,7 @@ body.about #wrapper .brand .nav__btn a {
     padding: 20px;
   }
   body.about #wrapper main .section02 .inner h1 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 100;
     line-height: 1;
   }

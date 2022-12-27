@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/magazine.css" />
 		<link rel="stylesheet" href="css/locomotive-scroll.css" />
+		<script defer type="module" src="js/common.js"></script>
 		<script defer src="js/main.js"></script>
 		<script defer src="js/magazine.js"></script>
 		<script src="js/gsap.min.js"></script>
@@ -20,80 +21,8 @@
 		<div class="preloader"></div>
 		<div id="wrapper">
 			<!-- header -->
-			<header>
-				<div class="inner">
-					<a href="index.html">
-						<img src="src/img/logo.png" alt="logo" />
-					</a>
-					<nav>
-						<ul class="links">
-							<li>
-								<a href="./about.html" class="link">
-									<span class="link__cont">
-										<span class="link__text">ABOUT</span>
-										<span class="link__text">ABOUT</span>
-									</span>
-								</a>
-							</li>
-							<li class="link">
-								<a href="./index.html#commitment" class="link">
-									<span class="link__cont">
-										<span class="link__text">COMMITMENTS</span>
-										<span class="link__text">COMMITMENTS</span>
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="./brand.html" class="link">
-									<span class="link__cont">
-										<span class="link__text">BRANDS</span>
-										<span class="link__text">BRANDS</span>
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="./magazine.html" class="link">
-									<span class="link__cont">
-										<span class="link__text">MAGAZINE</span>
-										<span class="link__text">MAGAZINE</span>
-									</span>
-								</a>
-							</li>
-							<li class="join">
-								<a href="./contact.html" class="link">
-									<span class="link__cont">
-										<span class="link__text">CONTACT</span>
-										<span class="link__text">CONTACT</span>
-									</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__burger">
-						<span class="header__burger-line"></span>
-						<span class="header__burger-line"></span>
-						<span class="header__burger-line"></span>
-					</div>
-				</div>
-			</header>
-			<!-- mo menu -->
-			<div class="menu">
-				<div class="menu__close">
-					<span class="menu__line"></span>
-					<span class="menu__line"></span>
-				</div>
-				<div class="menu__container">
-					<div class="menu__links">
-						<a href="./about.html" class="menu__link">ABOUT</a>
-						<a href="./index.html#commitment" class="menu__link">COMMITMENTS</a>
-						<a href="./brand.html" class="menu__link">BRANDS</a>
-						<a href="./magazine.html" class="menu__link">MAGAZINE</a>
-					</div>
-					<div class="menu__link-join">
-						<a href="./contact.html" class="menu__link">CONTACT</a>
-					</div>
-				</div>
-			</div>
+			<my-header></my-header>
+
 			<!-- main -->
 			<main>
 				<section class="section01" data-scroll-section>
@@ -127,7 +56,10 @@
 										<a href="./magazine_datail.html">
 											<div class="magazine__cont-box">
 												<div class="magazine__image">
-													<img src="src/img/magazine/magazine01.jpg" alt="" />
+													<img
+														src="src/img/magazine/magazine01.jpg"
+														alt="magazine_image"
+													/>
 												</div>
 												<div class="magazine__desc">
 													<span>SKIN CARE ESSENTIALS</span>
@@ -144,7 +76,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine01-beauty.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -163,7 +95,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine03-hair.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -179,7 +111,10 @@
 										<a href="./magazine_datail.html">
 											<div class="magazine__cont-box">
 												<div class="magazine__image">
-													<img src="src/img/magazine/magazine02.jpg" alt="" />
+													<img
+														src="src/img/magazine/magazine02.jpg"
+														alt="magazine_image"
+													/>
 												</div>
 												<div class="magazine__desc">
 													<span>SKIN CARE ESSENTIALS</span>
@@ -195,7 +130,10 @@
 										<a href="./magazine_datail.html">
 											<div class="magazine__cont-box">
 												<div class="magazine__image">
-													<img src="src/img/magazine/magazine04.jpg" alt="" />
+													<img
+														src="src/img/magazine/magazine04.jpg"
+														alt="magazine_image"
+													/>
 												</div>
 												<div class="magazine__desc">
 													<span>SKIN CARE ESSENTIALS</span>
@@ -212,7 +150,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine01-hair.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -226,7 +164,10 @@
 										<a href="./magazine_datail.html">
 											<div class="magazine__cont-box">
 												<div class="magazine__image">
-													<img src="src/img/magazine/magazine03.jpg" alt="" />
+													<img
+														src="src/img/magazine/magazine03.jpg"
+														alt="magazine_image"
+													/>
 												</div>
 												<div class="magazine__desc">
 													<span>SKIN CARE ESSENTIALS</span>
@@ -244,7 +185,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine02-hair.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -263,7 +204,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine02-beauty.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -281,7 +222,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine01-ht.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -300,7 +241,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine02-ht.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -316,7 +257,7 @@
 												<div class="magazine__image">
 													<img
 														src="src/img/magazine/magazine03-beauty.jpg"
-														alt=""
+														alt="magazine_image"
 													/>
 												</div>
 												<div class="magazine__desc">
@@ -336,37 +277,9 @@
 				</section>
 				<section class="spacer" data-scroll-section></section>
 			</main>
+
 			<!-- footer -->
-			<footer>
-				<div class="inner">
-					<h3>
-						<span class="word" style="--word-index: 2" data-word="A">A </span>
-						<span class="word" style="--word-index: 4" data-word="unique"
-							>unique
-						</span>
-						<span class="word" style="--word-index: 6" data-word="Beauty"
-							>Beauty
-						</span>
-						<span class="word" style="--word-index: 8" data-word="leader"
-							>leader
-						</span>
-					</h3>
-					<div class="footer__wrapper">
-						<img src="src/img/logo.png" class="footer__logo" alt="logo" />
-						<aside>
-							<p class="footer__title">LOREAL</p>
-							<p class="footer__copy">
-								&copy; LOREAL PARIS 2022. <br class="vis-600" />All rights
-								reserved.
-							</p>
-							<ul>
-								<li><a href="">FACEBOOK</a></li>
-								<li><a href="">INSTAGRAM</a></li>
-							</ul>
-						</aside>
-					</div>
-				</div>
-			</footer>
+			<my-footer></my-footer>
 		</div>
 	</body>
 </html>
