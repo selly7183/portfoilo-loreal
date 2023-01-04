@@ -11,10 +11,10 @@
 >
     <Main>
         1. Footer를 fixed로 가장 밑에 붙게 한 뒤 각각의 section의 z-index값을 활용해서 인터렉션을 만듬.
-  2. 클래스 네임에 .is-inview가 붙으면 해당 section에 도달했을 때 addClass로 애니메이션이 동작하도록 만듬.
-  3. gsap 플러그인을 사용해서 이미지가 마우스에 따라 움직이는 모션 만듬.
-  
-<About>
+        2. 클래스 네임에 .is-inview가 붙으면 해당 section에 도달했을 때 addClass로 애니메이션이 동작하도록 만듬.
+        3. gsap 플러그인을 사용해서 이미지가 마우스에 따라 움직이는 모션 만듬.
+> 
+    <About>
   1. 단어 하나씩 애니메이션을 줘서 부드럽게 흐르는 텍스트 애니메이션 효과를 만듬.
   2. 애니메이션 delay값을 transition-delay: calc(0.1s * var(--word-index)); 로 순차적으로 텍스트가 나오게 효과를 줌.
   3. 애니메이션 키프레임으로 translateX()값을 이용해서 텍스트 overflow 효과 만듬.
