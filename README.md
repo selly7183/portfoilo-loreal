@@ -8,9 +8,9 @@
 4. 반응형작업까지 100% 완료.
 5. 웹표준성 검사 완료.
 6. git hub에 배포완료.
-
-<Main>
-  1. Footer를 fixed로 가장 밑에 붙게 한 뒤 각각의 section의 z-index값을 활용해서 인터렉션을 만듬.
+>
+    <Main>
+        1. Footer를 fixed로 가장 밑에 붙게 한 뒤 각각의 section의 z-index값을 활용해서 인터렉션을 만듬.
   2. 클래스 네임에 .is-inview가 붙으면 해당 section에 도달했을 때 addClass로 애니메이션이 동작하도록 만듬.
   3. gsap 플러그인을 사용해서 이미지가 마우스에 따라 움직이는 모션 만듬.
   
