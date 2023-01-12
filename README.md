@@ -4,7 +4,7 @@
 
 1. Locomotive 플러그인을 사용해서 전체적으로 스크롤이 부드럽게 되도록 설정.
 2. Sass 사용.
-3. JavaScript 로 만듬.
+3. JavaScript 사용.
 4. class를 이용해서 header, footer include 시킴.
 5. 반응형작업까지 100% 완료.
 6. 웹표준성 검사 완료.
