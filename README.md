@@ -45,7 +45,8 @@
         2. contact join form을 만들었고, 아무 내용도 입력하지 않고 submit 버튼을 누르면 밑에 경고 메세지가 각각 뜨게 스크립트 처리함.
         3. 알맞게 입력했다면 result.html로 이동되게 만듬.
 >
-        * class로 include
+        * <class로 include시키기>
+	    
         class MyHeader extends HTMLElement {
 	        connectedCallback() {
 		        this.innerHTML = `
