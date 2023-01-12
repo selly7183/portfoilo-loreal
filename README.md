@@ -13,7 +13,7 @@
     <Main>
         1. Footer를 fixed로 가장 밑에 붙게 한 뒤 각각의 section의 z-index값을 활용해서 인터렉션을 만듬.
         2. 클래스 네임에 .is-inview가 붙으면 해당 section에 도달했을 때 addClass로 애니메이션이 동작하도록 만듬.
-        3. gsap 플러그인을 사용해서 이미지가 마우스에 따라 움직이는 모션 만듬.
+        3. gsap 플러그인을 사용해서 이미지가 마우스에 따라 움직이는 모션 만듬. (x: moveX, y:moveY, ease:'slow' ...)
         4. main 동영상이 아이폰에서 전체화면으로 보여지는 이슈가 있어서 playsinline 속성을 추가해줌.
 > 
     <About>
@@ -32,7 +32,7 @@
         3. 해당 스크립트 추가해서 오류 해결.
 >   
     <Brands>
-        1. locomotive 플러그인 자체에 있는 data-scroll-sticky 옵션을 활용해서 fixed 효과를 주었고,
+        1. locomotive 플러그인 자체에 있는 data-scroll-sticky 옵션을 활용해서 fixed 효과를 주었고, data-scroll-call 속성을 사용해서 callValue가 각각의 data 속성과 일치할때 navBtn 링크들에 active를 add,remove해줌.
         2. data-scroll-repeat='true' 를 통해 스크롤을 반복했을 때에도 해당 인터렉션이 반복되도록 설정을 줌.
  >
     <Magazine>
@@ -42,7 +42,7 @@
 >  
     <Contact>
         1. LOLEAL GROUP 홈페이지에는 없던 페이지인데 레퍼런스 사이트를 보고 제작하게됨.
-        2. contact join form을 만들었고, 아무 내용도 입력하지 않고 submit 버튼을 누르면 밑에 경고 메세지가 각각 뜨게 스크립트 처리함.
+        2. contact join form을 만들었고, 아무 내용도 입력하지 않고 submit 버튼을 누르면 text의 length에 따라서 createElement로 p를 만들어서 append로 밑에 경고 메세지가 각각 뜨도록 스크립트 처리함.
         3. 알맞게 입력했다면 result.html로 이동되게 만듬.
 >
         * <class로 include시키기>
