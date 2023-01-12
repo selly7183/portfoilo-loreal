@@ -2,13 +2,14 @@
 ### Site : https://selly7183.github.io/portfoilo-loreal/index.html
 ![loreal](https://user-images.githubusercontent.com/88068412/210552343-d059c391-55a4-4033-9258-1c5c715e0519.png)
 
-1. Locomotive 플러그인을 사용해서 전체적으로 스크롤이 부드럽게 되도록 설정.
-2. Sass 사용.
-3. JavaScript 사용.
-4. class를 이용해서 header, footer include 시킴.
-5. 반응형작업까지 100% 완료.
-6. 웹표준성 검사 완료.
-7. git hub에 배포완료.
+1. Loreal Group 사이트 리뉴얼.
+2. Locomotive 플러그인을 사용해서 전체적으로 스크롤이 부드럽게 되도록 설정.
+3. Sass 사용.
+4. JavaScript 사용.
+5. class를 이용해서 header, footer include 시킴.
+6. 반응형작업까지 100% 완료.
+7. 웹표준성 검사 완료.
+8. git hub에 배포완료.
 >
     <Main>
         1. Footer를 fixed로 가장 밑에 붙게 한 뒤 각각의 section의 z-index값을 활용해서 인터렉션을 만듬.
