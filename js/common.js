@@ -1,6 +1,7 @@
 class MyHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
+        <div class="preloader"></div>
         <header>
             <div class="inner">
                 <a href="index.html">
