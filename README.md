@@ -44,6 +44,19 @@
         1. LOLEAL GROUP 홈페이지에는 없던 페이지인데 레퍼런스 사이트를 보고 제작하게됨.
         2. contact join form을 만들었고, 아무 내용도 입력하지 않고 submit 버튼을 누르면 밑에 경고 메세지가 각각 뜨게 스크립트 처리함.
         3. 알맞게 입력했다면 result.html로 이동되게 만듬.
-  
-  
+>
+        * class로 include
+        class MyHeader extends HTMLElement {
+	        connectedCallback() {
+		        this.innerHTML = `
+                <header>...</header>  
+                `;
+	        }
+        }
+        customElements.define("my-header", MyHeader);   
+        
+        1) 먼저, 커스텀 요소 자바스크립트 클래스를 만듬.
+        2) connectedCallback는 사용자 정의 요소가 문서 연결 요소에 추가될 때마다 호출됨.
+        3) 페이지에 사용자 정의 요소를 등록하려면 CustomElementRegistry.define()메소드를 사용. 
+        4) 매개 변수에서 요소 이름을 지정한 다음 해당 기능을 정의하는 클래스 이름을 지정합니다.
   
