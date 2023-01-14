@@ -33,7 +33,7 @@
         3. 해당 스크립트 추가해서 오류 해결.
 >   
     <Brands>
-        1. locomotive 플러그인 자체에 있는 data-scroll-sticky 옵션을 활용해서 fixed 효과를 주었고, data-scroll-call 속성을 사용해서 callValue가 각각의 data 속성과 일치할때 navBtn 링크들에 active를 add,remove해줌.
+        1. locomotive 플러그인 자체에 있는 data-scroll-sticky 옵션을 활용해서 fixed 효과를 주었고, data-scroll-call 속성을 사용해서 callValue가 각각의 data 속성과 일치할때 navBtn 링크들에 add로 active를 주어서 해당 버튼 활성화시킴.
         2. data-scroll-repeat='true' 를 통해 스크롤을 반복했을 때에도 해당 인터렉션이 반복되도록 설정을 줌.
  >
     <Magazine>
