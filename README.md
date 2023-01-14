@@ -38,7 +38,7 @@
  >
     <Magazine>
         1. LOLEAL GROUP 홈페이지에 NEWS 부분을 BEAUTY MEGAGINE 이라는 컨셉으로 페이지를 새롭게 제작함.
-        2. [data-filter]값으로 각각의 [data-type] 값을 줘서 스크립트 처리로 해당 data로 tab 이동이 가능하게 만듬.
+        2. custom property 속성을 이용하여 [data-filter]값과 각각의 [data-type] 값의 속성이 일치할때 해당 필터에 맞는 글이 구분되어 나올 수 있도록 구현.
         3. 해당 글을 누르면 상세 페이지로 이동되도록 BEAUTY MEGAGINE detail 페이지를 제작.
 >  
     <Contact>
@@ -60,5 +60,5 @@
         1) 먼저, 커스텀 요소 자바스크립트 클래스를 만듬.
         2) connectedCallback는 사용자 정의 요소가 문서 연결 요소에 추가될 때마다 호출됨.
         3) 페이지에 사용자 정의 요소를 등록하려면 CustomElementRegistry.define()메소드를 사용. 
-        4) 매개 변수에서 요소 이름을 지정한 다음 해당 기능을 정의하는 클래스 이름을 지정합니다.
+        4) 매개 변수에서 요소 이름을 지정한 다음 해당 기능을 정의하는 클래스 이름을 지정.
   
