@@ -3,13 +3,14 @@
 ![loreal](https://user-images.githubusercontent.com/88068412/210552343-d059c391-55a4-4033-9258-1c5c715e0519.png)
 
 1. Loreal Group 사이트 리뉴얼.
-2. Locomotive 플러그인을 사용해서 전체적으로 스크롤이 부드럽게 되도록 설정.
-3. Sass 사용.
-4. JavaScript 사용.
-5. class를 이용해서 header, footer include 시킴.
-6. 반응형작업까지 100% 완료.
-7. 웹표준성 검사 완료.
-8. git hub에 배포완료.
+2. 기획, 디자인, 퍼블리싱 모두 100% 직접 기여함.
+3. Locomotive 플러그인을 사용해서 전체적으로 스크롤이 부드럽게 되도록 설정.
+4. 기존의 css의 단점을 보완하기 위해 Sass 사용. (코드 중복을 줄여줌으로써 가독성을 높이고, 유지보수가 용이함)
+5. JavaScript 사용.
+6. 서브페이지의 공통 header, footer를 class를 이용해서 include 시킴.
+7. 989px부터 반응형 작업 100% 완료.
+8. 웹 표준성 검사 완료.
+9. git hub에 배포완료.
 >
     <Main>
         1. Footer를 fixed로 가장 밑에 붙게 한 뒤 각각의 section의 z-index값을 활용해서 인터렉션을 만듬.
