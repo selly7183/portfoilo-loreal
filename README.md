@@ -41,6 +41,7 @@
         1. LOLEAL GROUP 홈페이지에 NEWS 부분을 BEAUTY MEGAGINE 이라는 컨셉으로 페이지를 새롭게 제작함.
         2. custom property 속성을 이용하여 [data-filter]값과 각각의 [data-type] 값의 속성이 일치할때 해당 필터에 맞는 글이 구분되어 나올 수 있도록 구현.
         3. 해당 글을 누르면 상세 페이지로 이동되도록 BEAUTY MEGAGINE detail 페이지를 제작.
+	4. grid를 사용함. (grid-template-columns: repeat(4, 1fr);)
 >  
     <Contact>
         1. LOLEAL GROUP 홈페이지에는 없던 페이지인데 레퍼런스 사이트를 보고 제작하게됨.
