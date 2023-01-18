@@ -64,3 +64,4 @@
         3) 페이지에 사용자 정의 요소를 등록하려면 CustomElementRegistry.define()메소드를 사용. 
         4) 매개 변수에서 요소 이름을 지정한 다음 해당 기능을 정의하는 클래스 이름을 지정.
   
+#### 포트폴리오 작업설명서 : https://www.miricanvas.com/v/11pnys1
